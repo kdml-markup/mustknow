@@ -1,3 +1,13 @@
+<?php
+session_start();
+if(!isset($_SESSION['uid']) || !isset($_SESSION['uname'])) {
+//    echo "<meta http-equiv='refresh' content='0;url=login.php'>";
+//    exit;
+    session_destroy();
+}
+$uid = $_SESSION['uid'];
+$uname = $_SESSION['uname'];
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -75,7 +85,7 @@
                       <img src="dist/img/main/Layer-40-copy.png" width="262" height="136" alt="">
                       <strong><em>REFERENCE</em><em>카드인포 - 부동산</em></strong>
                       <h3>디즈니가 스타워즈를 인수할 수 있었던 비결</h3>
-                      <span class="date">2016-05-06</span><span class="imp"> | 중요도 3</span>
+                      <span class="date">2016-05-26</span><span class="imp"> | 중요도 3</span>
                       <p>나는 상가임차인이다. 그런데 계약기간이 6개월 남짓 남았다. 좀 더 영업을 하고 싶다. 난 어떤 조치를 해야 하나?</p>
                     </li>
                     <li class="t6" data-date="2016-05-25" data-popularity="3" data-issue="hand">
@@ -95,7 +105,7 @@
                       <img src="dist/img/main/MergedLayers.png" width="262" height="136" alt="">
                       <strong><em>Case study</em><em>동영상강의 - 부동산</em></strong>
                       <h3>내부자들과 영업비밀</h3>
-                      <span class="date">2016-05-06</span><span class="imp"> | 중요도 3</span>
+                      <span class="date">2016-05-25</span><span class="imp"> | 중요도 3</span>
                       <p>나는 상가임차인이다. 그런데 계약기간이 6개월 남짓 남았다. 좀 더 영업을 하고 싶다. 난 어떤 조치를 해야 하나?</p>
                     </li>
                     <li class="t9" data-date="2016-05-24" data-popularity="3" data-issue="hand">
@@ -107,11 +117,9 @@
                     <li class="t10" data-date="2016-05-23" data-popularity="3" data-issue="hand">
                       <strong><em>CASE STUDY</em><em>체크앤팁 - 부동산</em></strong>
                       <h3>분쟁이 생겼을 때 내용증명을 보내는 것이 유리한가요?</h3>
-                      <span class="date">2016-05-24</span><span class="imp"> | 중요도 3</span>
+                      <span class="date">2016-05-23</span><span class="imp"> | 중요도 3</span>
                       <p>스톡옵션(주식매수청구권)이란 회사의 입직원에게 장래 일정한 시기에 이르러 미리 예정한 가격에 회사가 보유하고...</p>
                     </li>
-
-
                     <!-- End of grid blocks -->
                   </ul>
                   <button type="button" class="memo_more">Load more...</button>
@@ -119,7 +127,8 @@
             </div>       
         </div><!-- /.content-wrapper -->
 
-       <?php include("pages/tpl/footer.tpl"); ?>
+       <?php $path="main"; include("pages/tpl/footer.tpl");?>
+       
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->

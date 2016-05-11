@@ -1,3 +1,6 @@
+<? 
+if($path == "main") {
+?>
 <footer class="main-footer">
     <div class="policy">
       <ul class="p_link">
@@ -9,8 +12,7 @@
         <li><a href="#">고객센터</a></li>
       </ul>
     </div>
-    <div class="info">(주)머스트노우 | (135-876)서울시 강남구 테헤란로63길 14(삼성동 142-2) 인화빌딩 5층 | 대표이사 조우성<br>
-Tel. 02-568-2420 | Fax. 02-568-2421 | E-mail. webmaster@mustknow.co.kr<br>
+    <div class="info">(주)머스트노우 | (135-876)서울시 강남구 테헤란로63길 14(삼성동 142-2) 인화빌딩 5층 | 대표이사 조우성<br>Tel. 02-568-2420 | Fax. 02-568-2421 | E-mail. webmaster@mustknow.co.kr<br>
 사업자 등록번호:220-88-66022 | 통신판매업신고번호 | 개인정보보호 책임자:이민하</div>
     <div class="wrap_sns">
         <ul class="sns">
@@ -84,5 +86,14 @@ Tel. 02-568-2420 | Fax. 02-568-2421 | E-mail. webmaster@mustknow.co.kr<br>
     // Capture filter click events.
     $sortbys.click(onClickSortBy);
   });
+    
 })(jQuery);
 </script>
+<?
+}
+else if($id == "option2") {
+    // do this
+}
+    
+?>
+   

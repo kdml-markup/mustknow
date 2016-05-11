@@ -27,7 +27,28 @@
             <span class="icon-case"></span> <span>Case Study</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
-              <li class=""><a href="#">사례해설</a></li>
+              <li class="dropdown-hover">
+                <a href="#">사례해설</a>
+                <ul class="nav-end" style="display:none">
+                    <li><a href="#" class="click">전체보기</a></li>
+                    <li><a href="#">협상</a></li>
+                    <li><a href="#">계약</a></li>
+                    <li><a href="#">형사고소</a></li>
+                    <li><a href="#">채권회수</a></li>
+                    <li><a href="#">부동산</a></li>
+                    <li><a href="#">지재권</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                    <li><a href="#">경영권</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">가맹사업</a></li>
+                    <li><a href="#">스타트업</a></li>
+                    <li><a href="#">병원</a></li>
+                    <li><a href="#">기타</a></li>
+                    <li><a href="#">계약-일반</a></li>
+                    <li><a href="#">계약-특화</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                </ul>
+              </li>
               <li class=""><a href="#">동영상강의</a></li>
               <li class=""><a href="#">체크앤팁</a></li>
               <li class=""><a href="#">Q&A</a></li>
@@ -51,7 +72,7 @@
               <li class=""><a href="#">RM평가</a></li>
           </ul>
         </li>
-        <li class="active treeview">
+        <li class="active treeview last">
           <a href="#">
             <span class="icon-form"></span> <span>Form</span><i class="angle-left"></i>
           </a>
@@ -67,3 +88,11 @@
     </section>
 <!-- /.sidebar -->
 </aside>
+
+<script>
+$('.treeview-menu > li.dropdown-hover').hover(function() {
+  $('.nav-end').stop(true, true).delay(200).fadeIn(500);
+}, function() {
+  $('.nav-end').stop(true, true).delay(200).fadeOut(500);
+});
+</script>

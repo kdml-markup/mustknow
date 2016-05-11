@@ -11,7 +11,7 @@
 		return this.each(function(){
 
 			var ticker = $(this);
-			var control_styles = '<style type="text/css">#newscontent{float:left}#news{display:none}#controls{float:right;height:16px}.icon{display:inline-block;width:16px;height:16px;fill:'+opts.control_colour+'}.icon:hover{fill:'+opts.control_rollover+'}</style>';
+//			var control_styles = '<style type="text/css">#newscontent{float:left}#news{display:none}#controls{float:right;height:16px}.icon{display:inline-block;width:16px;height:16px;fill:'+opts.control_colour+'}.icon:hover{fill:'+opts.control_rollover+'}</style>';
 			// Array to contain news contents:
 			var contents = [];
 			var position = -1;
@@ -25,9 +25,9 @@
 
 				// Hide all:
 				$(ticker).hide();
-
-				// Create the buttons:
-				$('body').prepend(control_styles);
+//
+//				// Create the buttons:
+//				$('body').prepend(control_styles);
 
 				var controls = '<div id="ticker_container">';
 				controls += '<div id="newscontent"><div id="news"></div></div>';
