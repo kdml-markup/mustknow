@@ -658,7 +658,7 @@ a:focus {
     background-color: #fbfbfb;
 }
 
-.sidebar-menu > li > a > [class^="icon-"],v
+.sidebar-menu > li > a > [class^="icon-"],
 .sidebar-menu > li > a > [class*=" icon-"] {
     padding-right: 6px
 }
@@ -6090,14 +6090,14 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .tiles-wrap li.t6 p{color:rgba(150, 160, 164, 0.65098)}
 
 .tiles-wrap li.t7 {border:solid 1px #e5e7eb;border-top-color:#3673dd;background-color:#ffffff}
-.tiles-wrap li.t7 strong{color:#1a272f}
+.tiles-wrap li.t7 strong{color:#3673dd}
 .tiles-wrap li.t7 h3{color:#000000}
 .tiles-wrap li.t7 .date,.tiles-wrap li.t7 .imp{color:#a9b1b4}
 .tiles-wrap li.t7 p{color:#96a0a4}
 
 .tiles-wrap li.t8 {border:solid 1px #e5e7eb;border-top-color:#374850;background-color:#ffffff}
 .tiles-wrap li.t8 strong{color:#3c4f58}
-.tiles-wrap li.t8 h3{color:#000000}
+.tiles-wrap li.t8 h3{color:#333333}
 .tiles-wrap li.t8 .date,.tiles-wrap li.t8 .imp{color:#a9b1b4}
 .tiles-wrap li.t8 p{color:#96a0a4}
 
@@ -6169,6 +6169,33 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 }
 
 .memo_more{background-color:#c3c7ce;border-radius:2px;height:52px;color:#ffffff;font-size:14px;display:block;border:0;width:1374px;padding:0}
+
+/**
+  * Inside land
+  */
+.inside-land .content-wrapper > .main > div{margin:0 -8px}
+.inside-land .tiles-wrap{display: block;overflow:hidden}
+.inside-land .tiles-wrap:after{content:'';width:0;height:0;position:absolute;top:-9999px;clear:both}
+.inside-land .tiles-wrap li{opacity:100;margin:8px;position: relative;cursor: initial;}
+.inside-land .tiles-wrap li:hover{background-image:none;box-shadow:0 5px 11px rgba(0, 0, 0, 0.1)}
+.inside-land .tiles-wrap li h3{height:69px;overflow:hidden}
+.inside-land .tiles-wrap .favorites{background: url(../../dist/img/favorite.png) center center no-repeat;position:absolute;left:0;bottom:0;width: 260px;
+    height:38px;border-width:1px 0 0 0;border-top-color:#d9dadb;text-indent:-999px;overflow:hidden}
+.inside-land .tiles-wrap .favorites:hover{background-color:#fafafa}
+.inside-land .tiles-wrap .favorites.on{background-image:url(../../dist/img/favorite_on.png)}
+
+.inside-land .tiles-wrap li.t3,
+.inside-land .tiles-wrap li.t4,
+.inside-land .tiles-wrap li.t7{padding-bottom:54px}
+.inside-land .tiles-wrap li.t5,
+.inside-land .tiles-wrap li.t8{padding-bottom:58px}
+.inside-land .tiles-wrap li.t8:after{content:'';position:absolute;top:55px;left:115px;width: 30px;height: 30px;background:url(../../dist/img/ic_play.png) 0 0 no-repeat;}
+.inside-land .tiles-wrap li.t8 img{margin-bottom:13px}
+
+.inside-land .tiles-wrap li.t4 img{margin:20px 0 -16px -22px}
+.inside-land .tiles-wrap li.t4 .video{position:relative}
+.inside-land .tiles-wrap li.t4 .video:after{content:'';position:absolute;top:25px;left:93px;width: 30px;height: 30px;background:url(../../dist/img/ic_play.png) 0 0 no-repeat;}
+
 
 /**
  * Sort buttons
@@ -6246,3 +6273,22 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
     background: #4281f5;
     color: #ffffff;
 }
+
+/* 페이지네이션 */
+.wrap_pagination{text-align:center}
+.wrap_pagination .pagination{text-align:center;margin:6px 0}
+.wrap_pagination .pagination li{display:inline-block}
+.wrap_pagination .pagination a{width:28px;height:28px;font-size:14px;color:#969fa4;border:0;line-height:17px;text-indent:-1px;font-weight:500;background:none}
+.wrap_pagination .pagination .goto a{text-indent:-999px;overflow:hidden;border-radius:0}
+.wrap_pagination .pagination .first a{background: url(../../dist/img/btn_first.png) 0 0 no-repeat;}
+.wrap_pagination .pagination .first:hover a{background-image:url(../../dist/img/btn_first_over.png)}
+.wrap_pagination .pagination .pre{margin-right:11px}
+.wrap_pagination .pagination .pre a{background:url(../../dist/img/btn_pre.png) 0 0 no-repeat}
+.wrap_pagination .pagination .pre:hover a{background-image:url(../../dist/img/btn_pre_over.png)}
+.wrap_pagination .pagination .next{margin-left:11px}
+.wrap_pagination .pagination .next a{background:url(../../dist/img/btn_next.png) 0 0 no-repeat}
+.wrap_pagination .pagination .next:hover a{background-image:url(../../dist/img/btn_next_over.png)}
+.wrap_pagination .pagination .end a{background:url(../../dist/img/btn_end.png) 0 0 no-repeat}
+.wrap_pagination .pagination .end:hover a{background-image:url(../../dist/img/btn_end_over.png)}
+.wrap_pagination .pagination a:hover,
+.wrap_pagination .pagination .active a{color:#333333;background:none}

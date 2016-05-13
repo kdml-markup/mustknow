@@ -21,16 +21,16 @@
        /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li><a href=""><span class="icon-home"></span><span>Home</span></a></li>
+        <li><a href="/"><span class="icon-home"></span><span>Home</span></a></li>
         <li class="active treeview">
           <a href="#">
             <span class="icon-case"></span> <span>Case Study</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
               <li class="dropdown-hover">
-                <a href="#">사례해설</a>
+                <a href="/casestudy/explanation-of-case.php">사례해설</a>
                 <ul class="nav-end" style="display:none">
-                    <li><a href="#" class="click">전체보기</a></li>
+                    <li><a href="/casestudy/explanation-of-case.php" class="click">전체보기</a></li>
                     <li><a href="#">협상</a></li>
                     <li><a href="#">계약</a></li>
                     <li><a href="#">형사고소</a></li>
@@ -49,8 +49,50 @@
                     <li><a href="#">IT분쟁</a></li>
                 </ul>
               </li>
-              <li class=""><a href="#">동영상강의</a></li>
-              <li class=""><a href="#">체크앤팁</a></li>
+              <li class="dropdown-hover">
+                  <a href="/casestudy/video-lectures.php">동영상강의</a>
+                  <ul class="nav-end" style="display:none">
+                    <li><a href="/casestudy/video-lectures.php" class="click">전체보기</a></li>
+                    <li><a href="#">협상</a></li>
+                    <li><a href="#">계약</a></li>
+                    <li><a href="#">형사고소</a></li>
+                    <li><a href="#">채권회수</a></li>
+                    <li><a href="#">부동산</a></li>
+                    <li><a href="#">지재권</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                    <li><a href="#">경영권</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">가맹사업</a></li>
+                    <li><a href="#">스타트업</a></li>
+                    <li><a href="#">병원</a></li>
+                    <li><a href="#">기타</a></li>
+                    <li><a href="#">계약-일반</a></li>
+                    <li><a href="#">계약-특화</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-hover">
+                  <a href="/casestudy/check-and-tip.php">체크앤팁</a>
+                  <ul class="nav-end" style="display:none">
+                    <li><a href="/casestudy/check-and-tip.php" class="click">전체보기</a></li>
+                    <li><a href="#">협상</a></li>
+                    <li><a href="#">계약</a></li>
+                    <li><a href="#">형사고소</a></li>
+                    <li><a href="#">채권회수</a></li>
+                    <li><a href="#">부동산</a></li>
+                    <li><a href="#">지재권</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                    <li><a href="#">경영권</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">가맹사업</a></li>
+                    <li><a href="#">스타트업</a></li>
+                    <li><a href="#">병원</a></li>
+                    <li><a href="#">기타</a></li>
+                    <li><a href="#">계약-일반</a></li>
+                    <li><a href="#">계약-특화</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                </ul>
+              </li>
               <li class=""><a href="#">Q&A</a></li>
           </ul>
         </li>
@@ -59,8 +101,50 @@
             <span class="icon-ref"></span> <span>Reference</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
-              <li class=""><a href="#">카드인포</a></li>
-              <li class=""><a href="#">칼럼</a></li>
+              <li class="dropdown-hover">
+                  <a href="/casestudy/card-info.php">카드인포</a>
+                  <ul class="nav-end" style="display:none">
+                    <li><a href="/casestudy/card-info.php" class="click">전체보기</a></li>
+                    <li><a href="#">협상</a></li>
+                    <li><a href="#">계약</a></li>
+                    <li><a href="#">형사고소</a></li>
+                    <li><a href="#">채권회수</a></li>
+                    <li><a href="#">부동산</a></li>
+                    <li><a href="#">지재권</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                    <li><a href="#">경영권</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">가맹사업</a></li>
+                    <li><a href="#">스타트업</a></li>
+                    <li><a href="#">병원</a></li>
+                    <li><a href="#">기타</a></li>
+                    <li><a href="#">계약-일반</a></li>
+                    <li><a href="#">계약-특화</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                </ul>
+              </li>
+              <li class="dropdown-hover">
+                  <a href="/casestudy/column.php">칼럼</a>
+                  <ul class="nav-end" style="display:none">
+                    <li><a href="/casestudy/column.php" class="click">전체보기</a></li>
+                    <li><a href="#">협상</a></li>
+                    <li><a href="#">계약</a></li>
+                    <li><a href="#">형사고소</a></li>
+                    <li><a href="#">채권회수</a></li>
+                    <li><a href="#">부동산</a></li>
+                    <li><a href="#">지재권</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                    <li><a href="#">경영권</a></li>
+                    <li><a href="#">공정거래</a></li>
+                    <li><a href="#">가맹사업</a></li>
+                    <li><a href="#">스타트업</a></li>
+                    <li><a href="#">병원</a></li>
+                    <li><a href="#">기타</a></li>
+                    <li><a href="#">계약-일반</a></li>
+                    <li><a href="#">계약-특화</a></li>
+                    <li><a href="#">IT분쟁</a></li>
+                </ul>
+              </li>
           </ul>
         </li>
         <li class="active treeview">
@@ -91,8 +175,8 @@
 
 <script>
 $('.treeview-menu > li.dropdown-hover').hover(function() {
-  $('.nav-end').stop(true, true).delay(200).fadeIn(500);
+  $(this).find('.nav-end').stop(true, true).delay(200).fadeIn(500);
 }, function() {
-  $('.nav-end').stop(true, true).delay(200).fadeOut(500);
+  $(this).find('.nav-end').stop(true, true).delay(200).fadeOut(500);
 });
 </script>
