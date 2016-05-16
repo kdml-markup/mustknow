@@ -38,10 +38,10 @@ $uname = $_SESSION['uname'];
       <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
            <div class="title-area">
-                <h2><span>칼럼</span></h2>
+                <h2><span>카드인포</span></h2>
            </div>
            <div class="content main">
-               <div class="sch_filter">
+                <div class="sch_filter">
                 	<div class="sch_area">
                 		<input type="text" placeholder="검색어를 입력하세요."/>
                 	</div>
@@ -67,24 +67,21 @@ $uname = $_SESSION['uname'];
                 	</div>
                 </div>
                 <?php
-                    $type = "t4"; //칼럼 t4
+                    $type = "t5"; //카드인포 t5
                     $array = array(
                         array(
                             "title"=>"상호계산계약관계에 있는 업체에 제3의 업체로부터 양수한 금전채권을 별도로 행사할 수 있는지 알 수 있는 방법?",
                             "date"=>"2016-05-30",
                             "impt"=>"3",
                             "count"=>"20",
-                            "txt"=>"우선 상호계산이란 상인간 또는 상인비상 인간에 계속적인 거래관계가 있는 경우에 일정한 기간의 거래로 채권·채무의 총 경우에 일정한 기간의 거래로 채권·채무의 총",
-                            "img"=>"/dist/img/main/@temp_3.png",
-                            "video"=>"true"
+                            "txt"=>"우선 상호계산이란 상인간 또는 상인비상 인간에 계속적인 거래관계가 있는 경우에 일정한 기간의 거래로 채권·채무의 총 경우에 일정한 기간의 거래로 채권·채무의 총"
                         ),
                         array(
                             "title"=>"계약 기간은 다 돼가고 장사는 더 하고 싶을 때",
                             "date"=>"2016-05-29",
                             "impt"=>"10",
                             "count"=>"1",
-                            "txt"=>"나는 상가임차인이다. 그런데 계약기간이 6개월 남짓 남았다. 좀 더 영업을 하고싶다. 난 어떤 조치를 해야 하나?",
-                            "img"=>"/dist/img/main/@temp_2.png"
+                            "txt"=>"나는 상가임차인이다. 그런데 계약기간이 6개월 남짓 남았다. 좀 더 영업을 하고싶다. 난 어떤 조치를 해야 하나?"
                         ),
                         array(
                             "title"=>"내부자들과 영업비밀",
@@ -116,10 +113,10 @@ $uname = $_SESSION['uname'];
                         )
                     );
                ?>
-                                 <!--[D] list view -->
-                 <div class="table-list table-column _table-list">
+                 <!--[D] list view -->
+                 <div class="table-list table-cardinfo _table-list">
                     <table>
-                        <caption>칼럼</caption>
+                        <caption>체크앤팁</caption>
                         <colgroup>
                             <col width="55px">
                             <col width="53px">
@@ -154,7 +151,7 @@ $uname = $_SESSION['uname'];
                                 $i = rand(0,5);
                             ?>
                             <tr>
-                                <td class="bookmark"><span class="on"></span></td>
+                                <td class="bookmark"><span class=""></span></td>
                                 <td class="td-type-1"><span>9,999</span></td>
                                 <td class="td-type-2"><span>형사고소</span></td>
                                 <td class="td-type-2"><span><? echo $array[$i]['impt'] ?></span></td>
@@ -177,23 +174,21 @@ $uname = $_SESSION['uname'];
                             $i = rand(0,5);
                     ?>
                     <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
-                      <strong><em>칼럼 - 부동산</em></strong>
+                      <img src="/dist/img/main/Layer-40-copy.png" width="262" height="135" alt="">
+                      <strong><em>카드인포 - 부동산</em></strong>
                       <h3><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></h3>
                       <span class="date"><? echo $array[$i]['date'] ?></span><span class="imp"> | 중요도 <? echo $array[$i]['impt'] ?></span><span class="imp"> | 조회수 <? echo $array[$i]['count'] ?></span>
-                      <? if(!$array[$i]['img']): ?>
-                      <p><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></p>
-                      <? elseif($array[$i]['video']): ?>
-                      <div class="video"><img src="<? echo $array[$i]['img'] ?>"></div>
-                      <? else : ?>
-                      <img src="<? echo $array[$i]['img'] ?>">
-                      <? endif ?>
                       <button type="button" class="favorites">즐겨찾기 추가</button>
                     </li>
                     <? } ?>
+                    <li class="list-empty" style="display:none">검색결과가 없습니다.</li>
                     <!-- End of grid blocks -->
                   </ul>
                   <!--[D] 페이지네이션 -->
                     <div class="wrap_pagination">
+                        <!--[D] 검색시 back버튼 -->
+                        <a href="#" class="history">이전 목록으로 돌아가기</a>
+                        <!--//[D] 검색시 back버튼 -->
                         <ul class="pagination">
                             <li class="goto first"><a href="#">처음으로</a></li>
                             <li class="goto pre"><a href="#">이전</a></li>
@@ -227,7 +222,8 @@ $uname = $_SESSION['uname'];
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );
     });
-    $("._list-type li a").click(function(){
+    $("._list-type li a").click(function(event){
+        event.preventDefault();
         $("._table-list,._tiles-wrap").toggle();
         $(this).parents("ul").find("li").toggleClass( "on" );
     });
