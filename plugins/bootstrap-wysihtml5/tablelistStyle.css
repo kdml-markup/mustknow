@@ -1,0 +1,238 @@
+.content-wrapper > .content {
+	max-width: 1680px;
+	padding-bottom: 52px;
+	margin: 0 51px;
+	padding: 15px 0 132px;
+}
+.title-area {
+	padding: 11px 0 26px 51px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.title-area h2 span {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.sch_filter {
+	width: 100%;
+	position: relative;
+	height: 63px;
+}
+.sch_filter .sch_area  {
+    width: 196px;
+    /*height: 30px;*/
+    padding-top: 21px;
+    padding-left: 18px;
+    background: url('../../dist/img/search_on.png') no-repeat 0 27px;
+    background-size: 12px 12px;
+}
+.sch_filter .sch_area input {
+	border: 0;
+	background-color: transparent;
+	font-size: 14px;
+}
+.sch_filter .filter_area {
+	position: absolute;
+	right: 0;
+	top: 17px;
+}
+.sch_filter .filter_area .list-type ul li {
+	list-style: none;
+}
+.list-type {
+	/*overflow: hidden;*/
+}
+.list-type ul {
+	float: left;
+	overflow: hidden;
+	padding-top: 7px;
+}
+.list-type ul li {
+	float: left;
+}
+.list-type ul li.on em {
+	background-position: -25px 0;
+}
+.list-type ul li a {
+	display: block;
+	width: 100%;
+	height: 17px;
+}
+.list-type ul li a em {
+	display: inline-block;
+	width: 17px;
+	height: 17px;
+	background: url('../../dist/img/list_type.png') no-repeat 0 0;
+	line-height: 99999px;
+	vertical-align: top;
+	cursor: pointer;
+}
+.select-box {
+	float: right;
+	display: inline-block;
+    position: relative;
+    margin-left: 16px;
+    font-size: 12px;
+    letter-spacing: -1px;
+    text-align: left;
+    vertical-align: top;
+    zoom: 1;
+}
+.select-box .value {
+	width: 107px;
+}
+.select-box .value button {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	background-color: transparent;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #333;
+	text-align: left;
+	cursor: pointer;
+}
+.select-box .value button .arrow {
+	display: inline-block;
+    
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 7px;
+    height: 4px;
+    background: url('../../dist/img/selectbox_arrow.png') no-repeat 100% 0;
+    vertical-align: top;
+}
+.select-box .select-list {
+	position: absolute;
+	width: 100%;
+	top: 29px;
+	right: 0;
+	border: 1px solid #e5e5e5;
+	background-color: #fff;
+}
+.select-box .select-list ul {
+	padding: 0;
+	margin: 0;
+}
+.select-box .select-list ul li {
+	width: 100%;
+	padding: 6px 0 2px 16px;
+}
+.select-box .select-list ul li label {
+	cursor: pointer;
+}
+.select-box .select-list ul li:hover {
+	background-color: #4887f3;
+	color: #fff;	
+}
+.select-box .select-list ul li.on {
+	background-color: #4887f3;
+	color: #fff;
+}
+
+
+
+table caption {
+	display: none;
+}
+.table-list {
+	width: 100%;
+}
+.table-list table {
+	width: 100%;
+	table-layout: fixed;
+}
+.table-list table tr th {
+	padding: 12px 0 11px;
+	border-top: 2px solid #3673dd;
+	border-bottom: 1px solid #d9dadb;
+	text-align: center;
+	color: #444c57;
+	font-size: 12px;
+	font-weight: 400;
+}
+.table-video table tr th {
+	border-top: 2px solid #3c4f58;
+}
+.table-checktip table tr th {
+	border-top: 2px solid #e5583b;
+}
+.table-cardinfo table tr th {
+	border-top: 2px solid #8eb021;
+}
+.table-column table tr th {
+	border-top: 2px solid #abcbd6;
+}
+.table-list table tr th em {
+	display: inline-block;
+	background: url(../../dist/img/notice_arrow.png) 3px 0px no-repeat;
+	width: 8px;
+	height: 10px;
+	cursor: pointer; 
+}
+.table-list table tr th .controller a {
+	display: block;
+	width: 5px;
+	height: 5px;
+	line-height: 99999;
+}
+.table-list table tr td {
+	height: 56px;
+	padding: 12px 5px 13px;
+	border-bottom: 1px solid #d9dadb;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 400;	
+}
+.table-list table tr td.list-empty {
+	 color: #969fa4;
+}
+.table-list table tr td.bookmark span {
+	display: inline-block;
+	width: 13px;
+	height: 13px;	
+	background: url('../../dist/img/bookmark.png') no-repeat 0 0;
+	cursor: pointer;
+}
+.table-list table tr td.bookmark span.on {
+	background-position: -17px 0;
+}
+.table-list table tr td.td-type-1 {
+	color: #333;
+}
+.table-list table tr td.td-type-2 {
+	color: #969fa4;
+}
+.table-list table tr td.title {
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.table-list table tr td.title a {
+	color: #333;
+}
+
+
+
+
+::-webkit-input-placeholder { 
+color: #6a6d72;
+}
+:-moz-placeholder { 
+color: #6a6d72;
+}
+::-moz-placeholder { 
+color: #6a6d72;
+}
+:-ms-input-placeholder {
+color: #6a6d72;
+}
+
+
+
