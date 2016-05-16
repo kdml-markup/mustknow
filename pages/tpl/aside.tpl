@@ -102,9 +102,9 @@
           </a>
           <ul class="treeview-menu">
               <li class="dropdown-hover">
-                  <a href="/casestudy/card-info.php">카드인포</a>
+                  <a href="/reference/card-info.php">카드인포</a>
                   <ul class="nav-end" style="display:none">
-                    <li><a href="/casestudy/card-info.php" class="click">전체보기</a></li>
+                    <li><a href="/reference/card-info.php" class="click">전체보기</a></li>
                     <li><a href="#">협상</a></li>
                     <li><a href="#">계약</a></li>
                     <li><a href="#">형사고소</a></li>
@@ -124,9 +124,9 @@
                 </ul>
               </li>
               <li class="dropdown-hover">
-                  <a href="/casestudy/column.php">칼럼</a>
+                  <a href="/reference/column.php">칼럼</a>
                   <ul class="nav-end" style="display:none">
-                    <li><a href="/casestudy/column.php" class="click">전체보기</a></li>
+                    <li><a href="/reference/column.php" class="click">전체보기</a></li>
                     <li><a href="#">협상</a></li>
                     <li><a href="#">계약</a></li>
                     <li><a href="#">형사고소</a></li>

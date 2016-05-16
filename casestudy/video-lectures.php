@@ -181,10 +181,14 @@ $uname = $_SESSION['uname'];
                       <button type="button" class="favorites">즐겨찾기 추가</button>
                     </li>
                     <? } ?>
+                    <li class="list-empty">검색결과가 없습니다.</li>
                     <!-- End of grid blocks -->
                   </ul>
                   <!--[D] 페이지네이션 -->
                     <div class="wrap_pagination">
+                        <!--[D] 검색시 back버튼 -->
+                        <a href="#" class="history">이전 목록으로 돌아가기</a>
+                        <!--//[D] 검색시 back버튼 -->
                         <ul class="pagination">
                             <li class="goto first"><a href="#">처음으로</a></li>
                             <li class="goto pre"><a href="#">이전</a></li>
@@ -218,7 +222,8 @@ $uname = $_SESSION['uname'];
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );
     });
-    $("._list-type li a").click(function(){
+    $("._list-type li a").click(function(event){
+        event.preventDefault();
         $("._table-list,._tiles-wrap").toggle();
         $(this).parents("ul").find("li").toggleClass( "on" );
     });

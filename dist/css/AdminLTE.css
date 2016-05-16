@@ -6199,6 +6199,7 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .inside-land .tiles-wrap li.t4 .video{position:relative}
 .inside-land .tiles-wrap li.t4 .video:after{content:'';position:absolute;top:25px;left:93px;width: 30px;height: 30px;background:url(../../dist/img/ic_play.png) 0 0 no-repeat;}
 
+.inside-land .tiles-wrap li.list-empty{box-shadow:none;width:auto;padding:0;float: none;text-align:center;border:0;font:400 18px / 28px NotoSansKR;color: rgba(150, 159, 164, 0.901961);letter-spacing:-0.025em;padding:121px 0 125px 0}
 
 /**
  * Sort buttons
@@ -6295,6 +6296,7 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .wrap_pagination .pagination .end:hover a{background-image:url(../../dist/img/btn_end_over.png)}
 .wrap_pagination .pagination a:hover,
 .wrap_pagination .pagination .active a{color:#333333;background:none}
+.wrap_pagination .history{background: url(../../dist/img/histroy_list.png) 0 3px no-repeat;padding-left:13px;float:left;color:#6a6d72;font-size:13px;position:relative;top:11px;left:10px}
 
 /* select2 */
 .list-type .sort{
