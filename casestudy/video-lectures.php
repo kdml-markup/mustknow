@@ -181,7 +181,7 @@ $uname = $_SESSION['uname'];
                       <button type="button" class="favorites">즐겨찾기 추가</button>
                     </li>
                     <? } ?>
-                    <li class="list-empty">검색결과가 없습니다.</li>
+                    <li class="list-empty" style="display:none">검색결과가 없습니다.</li>
                     <!-- End of grid blocks -->
                   </ul>
                   <!--[D] 페이지네이션 -->
