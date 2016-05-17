@@ -37,11 +37,11 @@ $uname = $_SESSION['uname'];
 
       <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
-            <div class="title-area">
-                <h2><span>동영상강의</span></h2>
-            </div>
+           <div class="title-area">
+                <h2><span>카드인포</span></h2>
+           </div>
            <div class="content main">
-              <div class="sch_filter">
+                <div class="sch_filter">
                 	<div class="sch_area">
                 		<input type="text" placeholder="검색어를 입력하세요."/>
                 	</div>
@@ -66,8 +66,8 @@ $uname = $_SESSION['uname'];
                 		</div>
                 	</div>
                 </div>
-               <?php
-                    $type = "t8"; //동영상 강의 t8
+                <?php
+                    $type = "t5"; //카드인포 t5
                     $array = array(
                         array(
                             "title"=>"상호계산계약관계에 있는 업체에 제3의 업체로부터 양수한 금전채권을 별도로 행사할 수 있는지 알 수 있는 방법?",
@@ -113,10 +113,10 @@ $uname = $_SESSION['uname'];
                         )
                     );
                ?>
-                <!--[D] list view -->
-                 <div class="table-list table-video _table-list">
+                 <!--[D] list view -->
+                 <div class="table-list table-cardinfo _table-list">
                     <table>
-                        <caption>동영상강의</caption>
+                        <caption>체크앤팁</caption>
                         <colgroup>
                             <col width="55px">
                             <col width="53px">
@@ -174,8 +174,8 @@ $uname = $_SESSION['uname'];
                             $i = rand(0,5);
                     ?>
                     <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
-                      <img src="/dist/img/main/@temp.png" width="262" height="135" alt="">
-                      <strong><em>동영상강의 - 부동산</em></strong>
+                      <img src="/dist/img/main/Layer-40-copy.png" width="262" height="135" alt="">
+                      <strong><em>카드인포 - 부동산</em></strong>
                       <h3><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></h3>
                       <span class="date"><? echo $array[$i]['date'] ?></span><span class="imp"> | 중요도 <? echo $array[$i]['impt'] ?></span><span class="imp"> | 조회수 <? echo $array[$i]['count'] ?></span>
                       <button type="button" class="favorites">즐겨찾기 추가</button>

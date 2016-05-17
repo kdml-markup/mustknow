@@ -129,7 +129,7 @@ body.main{background-color:#f4f5f6}
     color: #444;
     border-top: 1px solid #e5e5e5;
 }
-.main-footer .policy {
+.main-footer .policy{
 }
 .main-footer .p_link {overflow:hidden;border-bottom:solid 1px #e5e5e5;height:42px;line-height:42px;margin-bottom:18px}
 .main-footer .p_link li{float:left;list-style:none;padding-right:21px}
@@ -146,6 +146,12 @@ body.main{background-color:#f4f5f6}
 .main-footer .facebook{background: url(../../dist/img/facebook.png) 0 0 no-repeat}
 .main-footer .facebook:hover{background-image:url(../../dist/img/facebook_on.png)}
 .main-footer .cr {color: #8d8d8d;font-size:11px;font-weight:400;padding-right:40px;position:absolute;bottom:17px;right:0;text-transform:uppercase}
+
+.main-footer.in{height:auto}
+.main-footer.in .policy{float:left}
+.main-footer.in .p_link {margin:0;border:0}
+.main-footer.in .wrap_sns{margin-top:10px}
+.main-footer.in .cr{top:16px;right:109px}
 
 
 
@@ -5038,7 +5044,7 @@ table.text-center th {
 .select2-selection .select2-selection--single {
     border: 1px solid #d2d6de;
     border-radius: 0;
-    padding: 6px 12px;
+    padding: 6px 15px;
     height: 34px;
 }
 
@@ -5047,7 +5053,7 @@ table.text-center th {
 }
 
 .select2-dropdown {
-    border: 1px solid #d2d6de;
+    border: 0;
     border-radius: 0;
 }
 
@@ -5055,11 +5061,13 @@ table.text-center th {
     background-color: #3c8dbc;
     color: white;
 }
-
+.select2-results__options{border-bottom:solid 1px #e5e5e5}
 .select2-results__option {
     padding: 6px 12px;
     user-select: none;
     -webkit-user-select: none;
+    border-left:solid 1px #e5e5e5;
+    border-right:solid 1px #e5e5e5;
 }
 
 .select2-container .select2-selection--single .select2-selection__rendered {
@@ -5102,10 +5110,12 @@ table.text-center th {
     background-color: #ddd;
 }
 
+/*
 .select2-container--default .select2-results__option[aria-selected=true],
 .select2-container--default .select2-results__option[aria-selected=true]:hover {
     color: #444;
 }
+*/
 
 .select2-container--default .select2-selection--multiple {
     border: 1px solid #d2d6de;
@@ -6173,8 +6183,8 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 /**
   * Inside land
   */
-.inside-land .content-wrapper > .main > div{margin:0 -8px}
-.inside-land .tiles-wrap{display: block;overflow:hidden}
+.inside-land .content-wrapper > .main [role="main"]{margin:0 -8px}
+.inside-land .tiles-wrap{display: block;overflow:hidden;margin-top:-8px}
 .inside-land .tiles-wrap:after{content:'';width:0;height:0;position:absolute;top:-9999px;clear:both}
 .inside-land .tiles-wrap li{opacity:100;margin:8px;position: relative;cursor: initial;}
 .inside-land .tiles-wrap li:hover{background-image:none;box-shadow:0 5px 11px rgba(0, 0, 0, 0.1)}
@@ -6191,11 +6201,11 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .inside-land .tiles-wrap li.t8{padding-bottom:58px}
 .inside-land .tiles-wrap li.t8:after{content:'';position:absolute;top:55px;left:115px;width: 30px;height: 30px;background:url(../../dist/img/ic_play.png) 0 0 no-repeat;}
 .inside-land .tiles-wrap li.t8 img{margin-bottom:13px}
-
 .inside-land .tiles-wrap li.t4 img{margin:20px 0 -16px -22px}
 .inside-land .tiles-wrap li.t4 .video{position:relative}
 .inside-land .tiles-wrap li.t4 .video:after{content:'';position:absolute;top:25px;left:93px;width: 30px;height: 30px;background:url(../../dist/img/ic_play.png) 0 0 no-repeat;}
 
+.inside-land .tiles-wrap li.list-empty{box-shadow:none;width:auto;padding:0;float: none;text-align:center;border:0;font:400 18px / 28px NotoSansKR;color: rgba(150, 159, 164, 0.901961);letter-spacing:-0.025em;padding:121px 0 125px 0}
 
 /**
  * Sort buttons
@@ -6291,4 +6301,70 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .wrap_pagination .pagination .end a{background:url(../../dist/img/btn_end.png) 0 0 no-repeat}
 .wrap_pagination .pagination .end:hover a{background-image:url(../../dist/img/btn_end_over.png)}
 .wrap_pagination .pagination a:hover,
-.wrap_pagination .pagination .active a{color:#333333;background:none}
+.wrap_pagination .pagination .active a,
+.wrap_pagination .pagination a:focus{color:#333333;background:none}
+.wrap_pagination .history{background: url(../../dist/img/histroy_list.png) 0 3px no-repeat;padding-left:13px;float:left;color:#6a6d72;font-size:13px;position:relative;top:11px;left:10px}
+
+/* select2 */
+.list-type .sort{
+	width: 107px;
+    float: right;
+    position: relative;
+    margin-left: 16px;
+    font-size: 12px;
+    letter-spacing: -1px;
+    text-align: left;
+    vertical-align: top;
+    zoom: 1;
+}
+.select2-container--default span.select2-selection--single{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	border: 1px solid #e5e5e5;
+	border-radius: 2px;
+	background-color: transparent;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 20px;
+	color: #333;
+	text-align: left;
+	cursor: pointer;
+}
+.select2-container--default .select2-selection--single span.select2-selection__rendered{color:#333;line-height:24px}
+.select2-container--default .select2-selection--single .select2-selection__arrow{
+    display: inline-block;
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    width: 7px;
+    height: 4px;
+    background: url('../../dist/img/selectbox_arrow.png') no-repeat 100% 0;
+    vertical-align: top;
+}
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow{
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+    border:0!important
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    
+}
+.select2-results__option {
+    padding: 6px 0 2px 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    color: #333333;
+    font-size: 12px;
+    height:30px
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color:#4887f3;
+    color:#ffffff;
+    border-color:#4887f3;
+}

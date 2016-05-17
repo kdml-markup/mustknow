@@ -1,7 +1,7 @@
 .content-wrapper > .content {
 	max-width: 1680px;
 	padding-bottom: 52px;
-	margin: 0 51px;
+/*	margin: 0 51px;*/
 	padding: 15px 0 132px;
 }
 .title-area {
@@ -50,9 +50,10 @@
 .list-type ul li {
 	float: left;
 }
-.list-type ul li.on em {
-	background-position: -25px 0;
-}
+.list-type ul li.card em{background-position:0 0;}
+.list-type ul li.card.on em{background-position:0 -25px}
+.list-type ul li.list em{background-position:-25px -25px}
+.list-type ul li.list.on em{background-position:-25px 0}
 .list-type ul li a {
 	display: block;
 	width: 100%;
@@ -142,6 +143,7 @@ table caption {
 }
 .table-list {
 	width: 100%;
+    padding-bottom:18px
 }
 .table-list table {
 	width: 100%;
