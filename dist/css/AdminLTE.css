@@ -129,7 +129,7 @@ body.main{background-color:#f4f5f6}
     color: #444;
     border-top: 1px solid #e5e5e5;
 }
-.main-footer .policy {
+.main-footer .policy{
 }
 .main-footer .p_link {overflow:hidden;border-bottom:solid 1px #e5e5e5;height:42px;line-height:42px;margin-bottom:18px}
 .main-footer .p_link li{float:left;list-style:none;padding-right:21px}
@@ -146,6 +146,12 @@ body.main{background-color:#f4f5f6}
 .main-footer .facebook{background: url(../../dist/img/facebook.png) 0 0 no-repeat}
 .main-footer .facebook:hover{background-image:url(../../dist/img/facebook_on.png)}
 .main-footer .cr {color: #8d8d8d;font-size:11px;font-weight:400;padding-right:40px;position:absolute;bottom:17px;right:0;text-transform:uppercase}
+
+.main-footer.in{height:auto}
+.main-footer.in .policy{float:left}
+.main-footer.in .p_link {margin:0;border:0}
+.main-footer.in .wrap_sns{margin-top:10px}
+.main-footer.in .cr{top:16px;right:109px}
 
 
 
@@ -6295,7 +6301,8 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .wrap_pagination .pagination .end a{background:url(../../dist/img/btn_end.png) 0 0 no-repeat}
 .wrap_pagination .pagination .end:hover a{background-image:url(../../dist/img/btn_end_over.png)}
 .wrap_pagination .pagination a:hover,
-.wrap_pagination .pagination .active a{color:#333333;background:none}
+.wrap_pagination .pagination .active a,
+.wrap_pagination .pagination a:focus{color:#333333;background:none}
 .wrap_pagination .history{background: url(../../dist/img/histroy_list.png) 0 3px no-repeat;padding-left:13px;float:left;color:#6a6d72;font-size:13px;position:relative;top:11px;left:10px}
 
 /* select2 */
