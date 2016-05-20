@@ -64,7 +64,6 @@ $uname = $_SESSION['uname'];
                                 </select>
                             </div>
                 		</div>
-                		<div class="sort-type"></div>
                 	</div>
                 </div>
                 <?php
@@ -156,7 +155,7 @@ $uname = $_SESSION['uname'];
                                 <td class="td-type-1"><span>9,999</span></td>
                                 <td class="td-type-2"><span>형사고소</span></td>
                                 <td class="td-type-2"><span><? echo $array[$i]['impt'] ?></span></td>
-                                <td class="title"><a href="#"><? echo $array[$i]['title'] ?></a></td>
+                                <td class="title"><a href="explanation-of-case-detail.php"><? echo $array[$i]['title'] ?></a></td>
                                 <td class="td-type-1"><span>홍길동</span></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['date'] ?></span></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['count'] ?></span></td>
@@ -176,9 +175,9 @@ $uname = $_SESSION['uname'];
                         ?>
                         <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
                           <strong><em>사례해설 - 부동산</em></strong>
-                          <h3><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></h3>
+                          <h3><a href="explanation-of-case-detail.php"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>
                           <span class="date"><? echo $array[$i]['date'] ?></span><span class="imp"> | 중요도 <? echo $array[$i]['impt'] ?></span><span class="imp"> | 조회수 <? echo $array[$i]['count'] ?></span>
-                          <p><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></p>
+                          <p><a href="explanation-of-case-detail.php"><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></a></p>
                           <button type="button" class="favorites">즐겨찾기 추가</button>
                         </li>
                         <? } ?>
