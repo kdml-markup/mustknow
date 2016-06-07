@@ -207,30 +207,21 @@ $uname = $_SESSION['uname'];
                         <p><a href="check-and-tip-detail.php"><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></a></p>
                        <b>999,000</b>
                       <button type="button" class="favorites">즐겨찾기 추가</button>
-                      <button type="button" class="download">                      	
-                		<ul class="file_type" style="display: block;">
-                			<li class="zip">
-                				<span>
-                					<a href="#">zip</a>	
-                				</span>                            				
-                			</li>
-                			<li class="hwp">
-                				<span>
-                					<a href="#">hwp</a>	
-                				</span>                            				
-                			</li>
-                			<li class="pdf">
-                				<span>
-                					<a href="#">pdf</a>	
-                				</span>                            				
-                			</li>
-                			<li class="doc">
-                				<span>
-                					<a href="#">doc</a>	
-                				</span>                            				
-                			</li>
-                		</ul>
-                      </button>
+                      <button type="button" class="download">다운로드</button>
+                        <ul class="file_type" style="display: block;">
+                            <li class="zip">
+                                <span><a href="#">zip</a></span>                            				
+                            </li>
+                            <li class="hwp">
+                                <span><a href="#">hwp</a></span>                            				
+                            </li>
+                            <li class="pdf">
+                                <span><a href="#">pdf</a></span>                            				
+                            </li>
+                            <li class="doc">
+                                <span><a href="#">doc</a></span>                            				
+                            </li>
+                        </ul>
                     </li>
                     <? } ?>
                     <li class="list-empty" style="display:none">등록된 컨텐츠가 없습니다.</li>

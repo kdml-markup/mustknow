@@ -211,17 +211,17 @@ table caption {
 .table-list table tr td.download {
 	position: relative;
 }
-.table-list table tr td.download span {
+.table-list table tr td.download > span {
 	display: inline-block;
 	width: 13px;
 	height: 13px;	
 	background: url('../../dist/img/download.png') no-repeat 0 0;
 	cursor: pointer;	
 }
-.table-list table tr td.download span.on {
+.table-list table tr td.download > span.on {
 	background-position: -17px 0;
 }
-.table-list table tr td.download ul.file_type {
+ul.file_type {
 	position: absolute;	
 	width: 84px;
 	height: 116px;
@@ -230,33 +230,49 @@ table caption {
 	text-align: left;
 	background-color: #fff;
 	border: 1px solid #d9dadb;
+    z-index:100;
+    bottom: 10px;
+    right: 10px
 }
-.table-list table tr td.download ul.file_type li {
+ul.file_type li {
 	height: 26px;
 	list-style: none;
 	cursor: pointer;
 }
-.table-list table tr td.download ul.file_type li:hover {
+ul.file_type li:hover {
 	background-color: #f5f5f7;
 }
-.table-list table tr td.download ul.file_type li span {
+ul.file_type li span {
+    display:block;
 	height: 100%;
 	padding: 0 14px;
 	background: url('../../dist/img/icon_downloadset.png') no-repeat 14px 7px;
 }
-.table-list table tr td.download ul.file_type li.hwp span {
+ul.file_type li.zip span {
+	background-position-y: 7px;
+}
+ul.file_type li.hwp span {
 	background-position-y: -19px;
 }
-.table-list table tr td.download ul.file_type li.pdf span {
+ul.file_type li.pdf span {
 	background-position-y: -45px;
 }
-.table-list table tr td.download ul.file_type li.doc span {
+ul.file_type li.doc span {
 	background-position-y: -71px;
 }
-.table-list table tr td.download ul.file_type li:hover span {
-	background-position-x: -21px;
+ul.file_type li.zip:hover span {
+	background-position-y: -97px;
 }
-.table-list table tr td.download ul.file_type li a {
+ul.file_type li.hwp:hover span {
+	background-position-y: -123px;
+}
+ul.file_type li.pdf:hover span {
+	background-position-y: -149px;
+}
+ul.file_type li.doc:hover span {
+	background-position-y: -175px;
+}
+ul.file_type li a {
 	display: block;
 	padding: 4px 0 0 14px;
 	color: #4f5865;
