@@ -219,7 +219,7 @@ table caption {
 	cursor: pointer;	
 }
 .table-list table tr td.download > span.on {
-	background-position: -17px 0;
+	background-position: -17px 0; 
 }
 ul.file_type {
 	position: absolute;	
