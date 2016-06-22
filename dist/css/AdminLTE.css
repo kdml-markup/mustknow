@@ -6180,6 +6180,11 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .tiles-wrap > li.t10 .date,.tiles-wrap > li.t10 .imp{color:rgba(255, 255, 255, 0.501961)}
 .tiles-wrap > li.t10 p,.tiles-wrap > li.t10 p a{color:rgba(255, 255, 255, 0.501961)}
 
+.tiles-wrap > li.t11 {border:solid 1px #e5e7eb;border-top-color:#3673dd;background-color:#ffffff}
+.tiles-wrap > li.t11 strong{color:#3673dd}
+.tiles-wrap > li.t11 h3,.tiles-wrap > li.t11 h3 a{color:#000000}
+.tiles-wrap > li.t11 .date,.tiles-wrap > li.t11 .imp{color:#a9b1b4}
+.tiles-wrap > li.t11 p,.tiles-wrap > li.t11 p a{color:#96a0a4}
 
 
 
@@ -6254,7 +6259,8 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 
 .inside-land .tiles-wrap > li.t3,
 .inside-land .tiles-wrap > li.t4,
-.inside-land .tiles-wrap > li.t7{padding-bottom:54px}
+.inside-land .tiles-wrap > li.t7,
+.inside-land .tiles-wrap > li.t11{padding-bottom:54px}
 .inside-land .tiles-wrap > li.t5,
 .inside-land .tiles-wrap > li.t8{padding-bottom:58px}
 .inside-land .tiles-wrap > li.t8 a.img{position:relative;display:block}
@@ -6538,7 +6544,7 @@ div.detail-wrapper.request{position:static!important}
 .detail-wrapper.cardinfo .detail-view .article .section h3{color:#7e9d1c}
 .detail-wrapper.column .detail-view .title > em,
 .detail-wrapper.column .detail-view .article .section h3{color:#8cbecf}
-.detail-wrapper.request .detail-view .title > em{color:#3673dd}
+.detail-wrapper.request .detail-view .title > em{color:#3673dd;}
 
 /* purchasing_info */
 .form .detail-view .title > em{color:#6b727d}
@@ -6638,6 +6644,21 @@ table tbody .new{width:12px;height:12px;background: url(../../dist/img/ico_new.p
 .detail-view .title .info span.complete,.detail-view .title .info span.delay{width:44px;height:15px;display:inline-block;text-indent:-999px;overflow:hidden;position:relative;top:-1px;vertical-align:middle}
 .detail-view .title .info span.delay{background:url(../../dist/img/status_delay.png) 0 0 no-repeat}
 .detail-view .title .info span.complete{background:url(../../dist/img/status_complete.png) 0 0 no-repeat}
+
+/* rm table */
+.table-list table tr td span.rm-complete,
+.table-list table tr td span.rm-progress,
+.table-list table tr td span.rm-stop{font-size:12px;font-weight:500}
+.table-list table tr td span.rm-complete{color:#4f5865}
+.table-list table tr td span.rm-progress{color:#865024}
+.table-list table tr td span.rm-stop{color:#a9b0b4}
+
+.table-list.rm-table table tr th{border-top-color:#865025}
+
+/* sort-status */
+.sort-status{margin-left:16px}
+.sort-status .btn-group > .btn {width:62px;height:30px;padding:0;color:#9ba3b1;background-color: #fafafa;font-size:12px;border-color:#e5e5e5}
+.sort-status .btn-group > .btn.active{color:#3673dd;background-color:#ffffff;box-shadow:none;border-color:#e5e5e5}
 
 /* ul.file_type */
 .table-list table tr td.download > span{background-position:-17px 0}
