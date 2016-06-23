@@ -152,7 +152,7 @@
             <span class="icon-eval"></span> <span>Evaluation</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
-              <li class=""><a href="#">RM진단</a></li>
+              <li class=""><a href="/evaluation/diagnosis.php">RM진단</a></li>
               <li class=""><a href="#">RM평가</a></li>
           </ul>
         </li>
