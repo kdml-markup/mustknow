@@ -76,7 +76,7 @@ $uname = $_SESSION['uname'];
                 	</div>
                 </div>
                 <?php
-                    $type = "t11"; //RM진단 t11
+                    $type = "t13"; //RM진단 t13
                     $array = array(
                         array(
                             "title"=>"계약법 기초 - 계약 체결시 유의사항",
@@ -183,7 +183,7 @@ $uname = $_SESSION['uname'];
                                 <td class="td-type-1"><span>9,999</span></td>
                                 <td class="td-type-2"><span>형사고소</span></td>
                                 <td class="td-type-2"><span><? echo $array[$i]['impt'] ?></span></td>
-                                <td class="title"><a href="explanation-of-case-detail.php"><? echo $array[$i]['title'] ?></a></td>
+                                <td class="title"><a href="diagnosis-detail.php"><? echo $array[$i]['title'] ?></a></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['date'] ?></span></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['count'] ?></span></td>
                                 <td class="td-type-1"><span class="<? echo $array[$i]['status'] ?>"><? echo $array[$i]['status-text'] ?></span></td>
@@ -203,9 +203,9 @@ $uname = $_SESSION['uname'];
                         ?>
                         <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
                           <strong><em>사례해설 - 부동산</em></strong>
-                          <h3><a href="explanation-of-case-detail.php"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>
+                          <h3><a href="diagnosis-detail.php"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>
                           <span class="date"><? echo $array[$i]['date'] ?></span><span class="imp"> | 중요도 <? echo $array[$i]['impt'] ?></span><span class="imp"> | 조회수 <? echo $array[$i]['count'] ?></span>
-                          <button type="button" class="favorites">즐겨찾기 추가</button>
+                          <button type="button" class="status <? echo $array[$i]['status'] ?>">즐겨찾기 추가</button>
                         </li>
                         <? } ?>
                         <li class="list-empty" style="display:none">검색결과가 없습니다.</li>
@@ -213,9 +213,6 @@ $uname = $_SESSION['uname'];
                     </ul>
                   <!--[D] 페이지네이션 -->
                     <div class="wrap_pagination">
-                        <!--[D] 검색시 back버튼 -->
-                        <a href="#" class="history">이전 목록으로 돌아가기</a>
-                        <!--//[D] 검색시 back버튼 -->
                         <ul class="pagination">
                             <li class="goto first"><a href="#">처음으로</a></li>
                             <li class="goto pre"><a href="#">이전</a></li>

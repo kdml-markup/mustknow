@@ -153,7 +153,7 @@
           </a>
           <ul class="treeview-menu">
               <li class=""><a href="/evaluation/diagnosis.php">RM진단</a></li>
-              <li class=""><a href="#">RM평가</a></li>
+              <li class=""><a href="/evaluation/evaluation.php">RM평가</a></li>
           </ul>
         </li>
         <li class="active treeview last">
