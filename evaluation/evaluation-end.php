@@ -70,6 +70,7 @@ $uname = $_SESSION['uname'];
                         <div class="slot">
                             <h3>등급</h3>
                             <div class="rating"><strong>B</strong><span>양호</span></div>
+                            <div class="rating f" style="display:none"><strong>F</strong><span>위험</span></div>
                             <img src="../dist/img/graph-rating.gif" alt="등급표">
                         </div>
                         <div class="slot">
@@ -78,7 +79,7 @@ $uname = $_SESSION['uname'];
                         </div>
                     </div>
                     <div class="rm-dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">해설 상세보기</a>
+                        <a href="#" class="dropdown">해설 상세보기</a>
                         <div class="section-rm">
                            <ul class="rm-list vertical description-list">
                                <li>
@@ -192,6 +193,12 @@ $uname = $_SESSION['uname'];
     <script src="/dist/js/app.min.js"></script>
     <script>
       $(function () {
+        // dropdown
+        $('.dropdown').click(function(){
+            event.preventDefault();
+            $('.rm-dropdown').toggleClass('open');
+        });
+          
         //iCheck for checkbox and radio inputs
         $('input[type="radio"].minimal').iCheck({
           radioClass: 'iradio_mustknow'

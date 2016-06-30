@@ -70,6 +70,7 @@ $uname = $_SESSION['uname'];
                         <div class="slot">
                             <h3>등급</h3>
                             <div class="rating"><strong>B</strong><span>양호</span></div>
+                            <div class="rating f" style="display:none"><strong>F</strong><span>위험</span></div>
                             <img src="../dist/img/graph-rating.gif" alt="등급표">
                         </div>
                         <div class="slot">
@@ -92,6 +93,56 @@ $uname = $_SESSION['uname'];
        <?php include("../pages/tpl/footer.tpl");?>
        
     </div><!-- ./wrapper -->
+    
+    <!-- Modal : 목록으로 이동하시겠습니까 -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">목록으로 이동하시겠습니까?</h4>
+          </div>
+          <div class="modal-body">
+            현재까지 진행된 내역이 저장되지 않고<br>바로 목록으로 이동합니다.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-black" data-dismiss="modal">아니오</button>
+            <button type="button" class="btn btn-confirm">예</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal : 진단결과가 저장되었습니다. -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">진단결과가 저장되었습니다.</h4>
+          </div>
+          <div class="modal-body">
+            마이페이지 - 나의 데스크 - RM진단 / 평가에서<br>저장된 진단결과를 확인하실 수 있습니다.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal : 평가결과가 저장되었습니다. -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">평가결과가 저장되었습니다.</h4>
+          </div>
+          <div class="modal-body">
+            마이페이지 - 나의 데스크 - RM진단 / 평가에서<br>저장된 평가결과를 확인하실 수 있습니다.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
     
     <!-- jQuery Knob -->
     <script src="../../plugins/knob/jquery.knob.js"></script>

@@ -49,7 +49,7 @@
                <div class="dropdown-menu">
                     <div class="user-hello">
                         <h3>안녕하세요. <em><? echo $uname; ?></em> 님 환영합니다.</h3>
-                        <a href="" class="btn btn-gray">마이페이지</a>
+                        <a href="/mypage/myservice/index.php" class="btn btn-gray">마이페이지</a>
                         <a href="/logout.php" class="btn btn-black">로그아웃</a>
                     </div>
                     <div class="user-status">

@@ -130,6 +130,107 @@ $uname = $_SESSION['uname'];
        
     </div><!-- ./wrapper -->
     
+    <!-- Modal : 평가결과가 저장되었습니다. -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">유료콘텐츠입니다.</h4>
+          </div>
+          <div class="modal-body">
+            Data 서비스를 신청해주세요.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal : 목록으로 이동하시겠습니까 -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">목록으로 이동하시겠습니까?</h4>
+          </div>
+          <div class="modal-body">
+            현재까지 진행된 내역이 저장되지 않고<br>바로 목록으로 이동합니다.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-black" data-dismiss="modal">아니오</button>
+            <button type="button" class="btn btn-confirm">예</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal : 현재까지 진행한 내역을 저장합니다. -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">현재까지 진행한 내역을 저장합니다.</h4>
+          </div>
+          <div class="modal-body">
+            다음 접속시 현재 진행한 지점부터<br>이어서 진행하실 수 있습니다.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-black" data-dismiss="modal">아니오</button>
+            <button type="button" class="btn btn-confirm">예</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal : 저장된 지점부터 이어서 하시겠습니까? -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">저장된 지점부터 이어서 하시겠습니까?</h4>
+          </div>
+          <div class="modal-body">
+            이어하시길 원하신다면 예를,<br>초기화를 원하시면 아니오를 클릭해주세요.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-black" data-dismiss="modal">아니오</button>
+            <button type="button" class="btn btn-confirm">예</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal : 아직 체크하지 않은 항목이 있습니다. -->
+    <div class="modal fade" id="myPay" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">아직 체크하지 않은 항목이 있습니다.</h4>
+          </div>
+          <div class="modal-body">
+            문제지의 모든 항목을 체크해야 제출할 수 있습니다.<br>체크하지 않은 항목을 확인해주세요.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-confirm">확인</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal : 아직 체크하지 않은 항목이 있습니다. -->
+    <div class="modal fade" id="mySubmit" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">평가를 제출하시겠습니까?</h4>
+          </div>
+          <div class="modal-body">
+            평가를 제출하시면 채점 후 결과를<br>바로 열람하실 수 있습니다.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-black" data-dismiss="modal">아니오</button>
+            <a class="btn btn-confirm" href="diagnosis-end.php">예</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <!-- iCheck 1.0.1 -->
     <script src="../../plugins/iCheck/icheck.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
