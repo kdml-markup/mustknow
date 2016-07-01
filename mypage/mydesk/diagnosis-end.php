@@ -14,11 +14,13 @@ $uname = $_SESSION['uname'];
     <title>MustKnow</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/plugins/select2/select2.min.css">
     <link rel="stylesheet" href="/dist/css/AdminLTE.css">
     <link rel="stylesheet" href="/dist/css/mustknow.ico.css">
     <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
     <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/tablelistStyle.css">
     <script src="/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="/plugins/select2/select2.full.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -27,18 +29,21 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="hold-transition skin-blue sidebar-mini inside-land">
-    <?php include("../pages/tpl/advertising.tpl"); ?>
+    <?php include("../../pages/tpl/advertising.tpl"); ?>
     <div class="wrapper">
 
-      <?php include("../pages/tpl/header.tpl");
-            include("../pages/tpl/aside.tpl"); ?>
+      <?php include("../../pages/tpl/header.tpl");
+            include("../../pages/tpl/aside.tpl"); ?>
 
       <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper detail-wrapper evaluation end">
-          <?php include("../pages/tpl/detail-side.tpl");?>
-           <div class="detail-view">
+        <div class="content-wrapper detail-wrapper evaluation end" style="position:static">
+           <div class="content main mypage">
+            
+               <?php include("../menu.php"); ?>
+               
+               <div class="detail-view">
                 <div class="title">
-                    <em><strong>RM진단 &#183; </strong>부동산</em>
+                    <em><strong>RM평가 &#183; </strong>부동산</em>
                     <h2>계약법 기초 - 계약 체결시 유의사항</h2>
                     <div class="info">
                         <ul>
@@ -71,7 +76,7 @@ $uname = $_SESSION['uname'];
                             <h3>등급</h3>
                             <div class="rating"><strong>B</strong><span>양호</span></div>
                             <div class="rating f" style="display:none"><strong>F</strong><span>위험</span></div>
-                            <img src="../dist/img/graph-rating.gif" alt="등급표">
+                            <img src="../../dist/img/graph-rating.gif" alt="등급표">
                         </div>
                         <div class="slot">
                             <h3>평가</h3>
@@ -168,22 +173,22 @@ $uname = $_SESSION['uname'];
                         </div>
                     </div>
                 </div>
-                <div class="action-rm">
-                    <div class="lt">
-                        <a href="#" class="list">목록</a>
-                    </div>
-                    <div class="rt">
-                        <a href="#" class="submission">평가 결과 저장</a>
-                    </div>
+                <div class="action">
+                    <div class="lt"><a href="#" class="list"></a></div>
+                    <div class="rt"><a href="" class="back"></a><a href="" class="next"></a></div>
                 </div>
-            </div>       
-        </div><!-- /.content-wrapper -->
+            </div>
+            <?php include("../../pages/tpl/detail-side.tpl");?>            
+            </div><!-- nav-tabs-custom -->
+            <!--//[D] list view -->
+        </div>  
+        <!-- /.content-wrapper -->
 
-       <?php include("../pages/tpl/footer.tpl");?>
+       <?php include("../../pages/tpl/footer.tpl");?>
        
     </div><!-- ./wrapper -->
-    
-    <!-- iCheck 1.0.1 -->
+            
+<!-- iCheck 1.0.1 -->
     <script src="../../plugins/iCheck/icheck.min.js"></script>
     <!-- jQuery Knob -->
     <script src="../../plugins/knob/jquery.knob.js"></script>
@@ -193,6 +198,9 @@ $uname = $_SESSION['uname'];
     <script src="/dist/js/app.min.js"></script>
     <script>
       $(function () {
+        //dropdown menu
+        $("._nav-mypage dl:eq(1) dt").addClass("on mn3");
+          
         // dropdown
         $('.rm-dropdown .dropdown').click(function(){
             event.preventDefault();

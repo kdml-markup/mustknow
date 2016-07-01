@@ -13,7 +13,7 @@
                            <? if (isset($_SESSION['ucorp'])) : ?>
                            <dd><a href="">Q&A</a></dd>
                            <? endif; ?>
-                           <dd><a href="">RM진단/ 평가</a></dd>
+                           <dd><a href="../../mypage/mydesk/evaluation.php">Evaluation 결과</a></dd>
                            <dd><a href="../../mypage/mydesk/form.php">Form 보관함</a></dd>
                        </dl>
                        <dl>
