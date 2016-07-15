@@ -114,7 +114,7 @@ $uname = $_SESSION['uname'];
 	                            	</div>
                             		<div>
                             			<div class="letter_count"><span>0</span>&nbsp;/&nbsp;500자</div>
-                            			<a href="#">
+                            			<a data-toggle="modal"  data-target="#txtover">
                             				<img src="../../dist/img/btn_input.png">
                             			</a>
                             		</div>
@@ -143,6 +143,23 @@ $uname = $_SESSION['uname'];
        <?php include("../pages/tpl/footer.tpl");?>
        
     </div><!-- ./wrapper -->
+    
+    <!-- Modal -->
+	    <div class="modal fade" id="txtover" tabindex="-1" role="dialog" aria-labelledby="paymentConfirmation" aria-hidden="true">
+	      <div class="modal-dialog modal-sm">
+	        <div class="modal-content">
+	          <div class="modal-header">
+	            <h4 class="modal-title" id="myModalLabel">글자수를 초과하였습니다.</h4>
+	          </div>
+	          <div class="modal-body">
+	            최대 100자로 수정해주세요.
+	          </div>
+	          <div class="modal-footer">
+	            <button type="button" class="btn btn-confirm" data-dismiss="modal">확인</button>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
     
     <!-- Slimscroll -->
     <script src="/plugins/slimScroll/jquery.slimscroll.min.js"></script>
