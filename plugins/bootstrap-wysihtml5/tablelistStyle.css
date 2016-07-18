@@ -1081,7 +1081,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 	border-bottom: 1px solid #e5e5e5;
 }
 .cscenter_wrap div.content {
-	min-height: 736px;
+	min-height: 756px;
 }
 .faq_content_top h2 {
 	position: absolute;
@@ -1452,7 +1452,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 	margin-top: 35px;
 	background-color: #3673dd;
 }
-.login_wrap a {
+.login_wrap .content a {
 	display: block;
 	width: 166px;
 	height: 50px;
@@ -1743,7 +1743,7 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 .comp_signup_notice span {
 	font-size: 12px;
 }
-.comp_signup_notice a {
+.content .comp_signup_notice a {
 	display: inline-block;
 	width: 110px;
 	height: 19px;
@@ -1936,7 +1936,9 @@ textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */
 }
 /*하단 액션 버튼*/
 
-
+.f2 .main-footer {
+	margin-left: 0;
+}
 
 
 

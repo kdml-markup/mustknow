@@ -36,7 +36,7 @@ $uname = $_SESSION['uname'];
             include("../pages/tpl/cs-aside.tpl"); ?>
 
       <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper writemail cscenter_wrap action_wrap">
+        <div class="content-wrapper writemail cscenter_wrap action_wrap f2">
            <div class="faq_content_top c_outside">
                 <h2><span>문의메일 상담</span></h2>
                 <ul>
@@ -56,7 +56,7 @@ $uname = $_SESSION['uname'];
            		</div>    
     	    </div><!-- /.content-wrapper -->
 
-       <?php include("../pages/tpl/footer.tpl");?>
+       <?php include("../pages/tpl/cs-footer.tpl");?>
        
     </div><!-- ./wrapper -->
     

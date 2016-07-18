@@ -36,7 +36,7 @@ $uname = $_SESSION['uname'];
             include("../pages/tpl/cs-aside.tpl"); ?>
 
       <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper ">
+        <div class="content-wrapper f2">
            <div class="content main">        	
            		<div class="faq_sch">
            			<div class="faq_filter">
@@ -276,7 +276,7 @@ $uname = $_SESSION['uname'];
             </div>       
         </div><!-- /.content-wrapper -->
 
-       <?php include("../pages/tpl/footer.tpl");?>
+       <?php include("../pages/tpl/cs-footer.tpl");?>
        
     </div><!-- ./wrapper -->
             

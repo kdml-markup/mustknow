@@ -36,7 +36,7 @@ $uname = $_SESSION['uname'];
             include("../pages/tpl/cs-aside.tpl"); ?>
 
       <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper cscenter_wrap login_wrap join join_wrap">
+        <div class="content-wrapper cscenter_wrap login_wrap join join_wrap f2">
            <div class="faq_content_top">
                 <h2><span>아이디 &amp; 패스워드 찾기</span><strong>Find your ID &amp; Password</strong></h2>
            </div>
@@ -52,7 +52,7 @@ $uname = $_SESSION['uname'];
                
         </div><!-- /.content-wrapper -->
 
-       <?php include("../pages/tpl/footer.tpl");?>
+       <?php include("../pages/tpl/cs-footer.tpl");?>
        
     </div><!-- ./wrapper -->
             
