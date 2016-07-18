@@ -1,7 +1,7 @@
 <header class="main-header">
 <!-- Logo -->
-    <a href="/index.php" class="logo">
-      <img src="/dist/img/mustknow.png" class="logo-lg" height="36" alt="mustknow">
+    <a href="/mustknow/index.php" class="logo">
+      <img src="/mustknow/dist/img/mustknow.png" class="logo-lg" height="36" alt="mustknow">
     </a>
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
@@ -49,8 +49,8 @@
                <div class="dropdown-menu">
                     <div class="user-hello">
                         <h3>안녕하세요. <em><? echo $uname; ?></em> 님 환영합니다.</h3>
-                        <a href="/mypage/myservice/index.php" class="btn btn-gray">마이페이지</a>
-                        <a href="/logout.php" class="btn btn-black">로그아웃</a>
+                        <a href="/mustknow/mypage/myservice/index.php" class="btn btn-gray">마이페이지</a>
+                        <a href="/mustknow/logout.php" class="btn btn-black">로그아웃</a>
                     </div>
                     <div class="user-status">
                         <h3 class="sb">서비스 이용 현황</h3>
@@ -63,7 +63,7 @@
                     <div class="user-apply">
                         <h3 class="sb">서비스 신청하기</h3> 
                         <p>서비스 기간을 연장하고 싶은신가요?</p>
-                        <a href="/login.php" class="btn btn-blue">로그인</a>
+                        <a href="/mustknow/login.php" class="btn btn-blue">로그인</a>
                     </div>
                 </div>
             <? else: ?>
@@ -77,7 +77,7 @@
                   <li class="user-true">
                     <h3>이미 서비스에 가입한 회원이신가요?</h3> 
                     <p>회원가입을 이미 완료한 회원이시라면 로그인을 해주세요.</p>
-                    <a href="/login.php" class="btn btn-default btn-flat">로그인</a>
+                    <a href="/mustknow/login.php" class="btn btn-default btn-flat">로그인</a>
                     <a href="#" class="find">아이디 / 비밀번호를 잃어버리셨나요?</a>
                   </li>
                 </ul>

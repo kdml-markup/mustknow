@@ -13,14 +13,14 @@ $uname = $_SESSION['uname'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MustKnow</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/plugins/select2/select2.min.css">
-    <link rel="stylesheet" href="/dist/css/AdminLTE.css">
-    <link rel="stylesheet" href="/dist/css/mustknow.ico.css">
-    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/tablelistStyle.css">
-    <script src="/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <script src="/plugins/select2/select2.full.min.js"></script>
+    <link rel="stylesheet" href="/mustknow/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/mustknow/plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="/mustknow/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="/mustknow/dist/css/mustknow.ico.css">
+    <link rel="stylesheet" href="/mustknow/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="/mustknow/plugins/bootstrap-wysihtml5/tablelistStyle.css">
+    <script src="/mustknow/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="/mustknow/plugins/select2/select2.full.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -111,7 +111,7 @@ $uname = $_SESSION['uname'];
     </div>
             
     <!-- Slimscroll -->
-    <script src="/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="/mustknow/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->

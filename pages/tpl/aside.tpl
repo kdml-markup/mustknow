@@ -28,9 +28,9 @@
           </a>
           <ul class="treeview-menu">
               <li class="dropdown-hover">
-                <a href="/casestudy/explanation-of-case.php">사례해설</a>
+                <a href="/mustknow/casestudy/explanation-of-case.php">사례해설</a>
                 <ul class="nav-end" style="display:none">
-                    <li><a href="/casestudy/explanation-of-case.php" class="click">전체보기</a></li>
+                    <li><a href="/mustknow/casestudy/explanation-of-case.php" class="click">전체보기</a></li>
                     <li><a href="#">협상</a></li>
                     <li><a href="#">계약</a></li>
                     <li><a href="#">형사고소</a></li>
@@ -50,9 +50,9 @@
                 </ul>
               </li>
               <li class="dropdown-hover">
-                  <a href="/casestudy/video-lectures.php">동영상강의</a>
+                  <a href="/mustknow/casestudy/video-lectures.php">동영상강의</a>
                   <ul class="nav-end" style="display:none">
-                    <li><a href="/casestudy/video-lectures.php" class="click">전체보기</a></li>
+                    <li><a href="/mustknow/casestudy/video-lectures.php" class="click">전체보기</a></li>
                     <li><a href="#">협상</a></li>
                     <li><a href="#">계약</a></li>
                     <li><a href="#">형사고소</a></li>
@@ -72,9 +72,9 @@
                 </ul>
               </li>
               <li class="dropdown-hover">
-                  <a href="/casestudy/check-and-tip.php">체크앤팁</a>
+                  <a href="/mustknow/casestudy/check-and-tip.php">체크앤팁</a>
                   <ul class="nav-end" style="display:none">
-                    <li><a href="/casestudy/check-and-tip.php" class="click">전체보기</a></li>
+                    <li><a href="/mustknow/casestudy/check-and-tip.php" class="click">전체보기</a></li>
                     <li><a href="#">협상</a></li>
                     <li><a href="#">계약</a></li>
                     <li><a href="#">형사고소</a></li>
@@ -102,9 +102,9 @@
           </a>
           <ul class="treeview-menu">
               <li class="dropdown-hover">
-                  <a href="/reference/card-info.php">카드인포</a>
+                  <a href="/mustknow/reference/card-info.php">카드인포</a>
                   <ul class="nav-end" style="display:none">
-                    <li><a href="/reference/card-info.php" class="click">전체보기</a></li>
+                    <li><a href="/mustknow/reference/card-info.php" class="click">전체보기</a></li>
                     <li><a href="#">협상</a></li>
                     <li><a href="#">계약</a></li>
                     <li><a href="#">형사고소</a></li>
@@ -124,9 +124,9 @@
                 </ul>
               </li>
               <li class="dropdown-hover">
-                  <a href="/reference/column.php">칼럼</a>
+                  <a href="/mustknow/reference/column.php">칼럼</a>
                   <ul class="nav-end" style="display:none">
-                    <li><a href="/reference/column.php" class="click">전체보기</a></li>
+                    <li><a href="/mustknow/reference/column.php" class="click">전체보기</a></li>
                     <li><a href="#">협상</a></li>
                     <li><a href="#">계약</a></li>
                     <li><a href="#">형사고소</a></li>
@@ -152,20 +152,20 @@
             <span class="icon-eval"></span> <span>Evaluation</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
-              <li class=""><a href="/evaluation/diagnosis.php">RM진단</a></li>
-              <li class=""><a href="/evaluation/evaluation.php">RM평가</a></li>
+              <li class=""><a href="/mustknow/evaluation/diagnosis.php">RM진단</a></li>
+              <li class=""><a href="/mustknow/evaluation/evaluation.php">RM평가</a></li>
           </ul>
         </li>
         <li class="active treeview last">
-          <a href="/form/01_.php">
+          <a href="/mustknow/form/01_.php">
             <span class="icon-form"></span> <span>Form</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
-              <li class=""><a href="/form/01_.php">계약서</a></li>
-              <li class=""><a href="/form/02_.php">내용증명</a></li>
-              <li class=""><a href="/form/03_.php">고소장</a></li>
-              <li class=""><a href="/form/04_.php">매뉴얼</a></li>
-              <li class=""><a href="/form/05_.php">회사서식</a></li>
+              <li class=""><a href="/mustknow/form/01_.php">계약서</a></li>
+              <li class=""><a href="/mustknow/form/02_.php">내용증명</a></li>
+              <li class=""><a href="/mustknow/form/03_.php">고소장</a></li>
+              <li class=""><a href="/mustknow/form/04_.php">매뉴얼</a></li>
+              <li class=""><a href="/mustknow/form/05_.php">회사서식</a></li>
           </ul>
         </li>
       </ul>
