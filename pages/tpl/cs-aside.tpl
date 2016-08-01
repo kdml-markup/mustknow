@@ -4,7 +4,7 @@
       <ul class="sidebar-menu">
         <li class="active treeview">
           <a href="#">
-            <span class="cs_customer"></span> <span>고객 지원</span><i class="angle-left"></i>
+            <span class="cs_customer"></span> <span>고객 지원</span>
           </a>
           <ul class="treeview-menu">
               <li class="dropdown-hover">
@@ -21,7 +21,7 @@
         </li>
         <li class="active treeview">
           <a href="#">
-            <span class="cs_faq"></span> <span>FAQ</span><i class="angle-left"></i>
+            <span class="cs_faq"></span> <span>FAQ</span>
           </a>
           <ul class="treeview-menu">
               <li class="dropdown-hover">
