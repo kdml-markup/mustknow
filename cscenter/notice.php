@@ -13,14 +13,14 @@ $uname = $_SESSION['uname'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MustKnow</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="/mustknow/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/mustknow/plugins/select2/select2.min.css">
-    <link rel="stylesheet" href="/mustknow/dist/css/AdminLTE.css">
-    <link rel="stylesheet" href="/mustknow/dist/css/mustknow.ico.css">
-    <link rel="stylesheet" href="/mustknow/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-    <link rel="stylesheet" href="/mustknow/plugins/bootstrap-wysihtml5/tablelistStyle.css">
-    <script src="/mustknow/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <script src="/mustknow/plugins/select2/select2.full.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="/dist/css/mustknow.ico.css">
+    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/tablelistStyle.css">
+    <script src="/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="/plugins/select2/select2.full.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -28,17 +28,17 @@ $uname = $_SESSION['uname'];
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="hold-transition skin-blue sidebar-mini inside-land">
-    <?php include("../pages/tpl/advertising.tpl"); ?>
+  <body class="main hold-transition skin-blue sidebar-mini inside-land">
+    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
-            include("../pages/tpl/aside.tpl"); ?>
+            include("../pages/tpl/cs-aside.tpl"); ?>
 
       <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper">
-           <div class="title-area">
-                <h2><span>체크앤팁</span></h2>
+        <div class="content-wrapper cscenter_wrap f2 notice_wrap">
+           <div class="faq_content_top">
+                <h2><span>공지사항</span></h2>
            </div>
            <div class="content main">
                <div class="sch_filter">
@@ -47,25 +47,24 @@ $uname = $_SESSION['uname'];
                 	</div>
                 	<div class="filter_area">
                 		<div class="list-type _list-type">
-                			<ul>
+                			<!-- <ul>
                 				<li class="card" style="margin-right: 8px;">
                 					<a href="#"><em>썸네일형</em></a>
                 				</li>
                 				<li class="list on">
                 					<a href="#"><em>리스트형</em></a>
                 				</li>
-                			</ul>
+                			</ul> -->
                 			<div class="sort">
                                 <select class="select2" style="width: 100%;">
-                                  <option selected="selected">조회순</option>
-                                  <option>카테고리순</option>
-                                  <option>중요도순</option>
+                                  <option selected="selected">작성일순</option>
+                                  <option>조회순</option>
                                   <option>제목순</option>
                                 </select>
                             </div>
                 		</div>
                 	</div>
-                </div>
+                </div>	
                 <?
                     $type = "t3"; //체크앤팁 t3
                     $array = array(
@@ -114,27 +113,19 @@ $uname = $_SESSION['uname'];
                     );
                  ?>
                  <!--[D] list view -->
-                 <div class="table-list table-checktip _table-list">
+                 <div class="table-list">
                     <table>
                         <caption>체크앤팁</caption>
                         <colgroup>
-                            <col width="55px">
-                            <col width="53px">
-                            <col width="91px">
-                            <col width="51px">
+                            <col width="86px">
                             <col />
-                            <col width="101px" />
-                            <col width="89px" />
-                            <col width="103px" />
+                            <col width="108px" />
+                            <col width="82px" />
                         </colgroup>
                         <thead>
                             <tr>
-                                <th scope="col"><span></span></th>
                                 <th scope="col"><span>no.</span></th>
-                                <th scope="col"><span>카테고리</span><em class="controller"></em></th>
-                                <th scope="col"><span>중요도</span><em class="controller"></em></th>
                                 <th scope="col"><span>제목</span><em class="controller"></em></th>
-                                <th scope="col"><span>작성자</span></th>
                                 <th scope="col"><span>발행일</span><em class="controller"></em></th>
                                 <th scope="col"><span>조회수</span><em class="controller"></em></th>
                             </tr>
@@ -145,49 +136,40 @@ $uname = $_SESSION['uname'];
                                     <span>검색결과가 없습니다.</span>
                                 </td>
                             </tr>
+                            <tr>
+                                <td class="important_notice"><span></span></td>
+                                <td class="title"><a href="#">2016년 11월 11일부터 머스트노우 회원 가격 및 접속 정책이 변경 됩니다 2016년 11월 11일부터 머스트노우 회원 가격 및 접속의정책이가...<strong class="new_banner"></strong></a></td>
+                                <td class="td-type-1"><span>2016-05-26</span></td>
+                                <td class="td-type-1"><span>27</span></td>
+                            </tr>
+                            <tr class="notice_content" style="display: none;">
+                            	<td colspan="4">                            		
+		       						<div id='answer_<?=$count?>'>
+		       							<span class="icon_re"></span>
+		       							<p>법인회원은 개인사업자 또는 법인명의의 회원을 말하며,  사업체명의 세금계산서가 꼭 필요하신 곳이라면 반드시 법인회원으로 가입해 주셔야 합니다. 법인회원은 추가 내부이용자를 위한 서브(SUB)아이디를 만들 수 있으며, 서브(SUB)아이디 관리를 위한 별도의 관리자페이지가 제공됩니다. 개인회원이 법인회원으로 전환하기를 원하시면 아래 연락처로 전화를 주시면 바로 처리해 드립니다. </p>
+		       						</div>
+                            	</td>
+                            </tr>
                             <?                     
                             $count = 0;
                             while(++$count <= 16){ 
                                 $i = rand(0,5);
                             ?>
                             <tr>
-                                <td class="bookmark"><span class=""></span></td>
                                 <td class="td-type-1"><span>9,999</span></td>
-                                <td class="td-type-2"><span>형사고소</span></td>
-                                <td class="td-type-2"><span><? echo $array[$i]['impt'] ?></span></td>
-                                <td class="title"><a href="check-and-tip-detail.php"><? echo $array[$i]['title'] ?></a></td>
-                                <td class="td-type-1"><span>홍길동</span></td>
+                                <td class="title"><a href="#"><? echo $array[$i]['title'] ?></a></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['date'] ?></span></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['count'] ?></span></td>
                             </tr>
                             <? } ?>
                         </tbody>
                      </table>
-                </div>
-                <!--//[D] list view -->
-                <!--[D] card view -->
-                <div role="main">
-                  <ul class="tiles-wrap _tiles-wrap" style="display:none">
-                     <?
-                        $count = 0;
-                        while(++$count <= 16){ 
-                            $i = rand(0,5);
-                    ?>
-                    <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
-                      <strong><em>체크앤팁 - 계약</em></strong>
-                        <h3><a href="check-and-tip-detail.php"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>
-                      <span class="date"><? echo $array[$i]['date'] ?></span><span class="imp"> | 중요도 <? echo $array[$i]['impt'] ?></span><span class="imp"> | 조회수 <? echo $array[$i]['count'] ?></span>
-                        <p><a href="check-and-tip-detail.php"><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></a></p>
-                      <button type="button" class="favorites">즐겨찾기 추가</button>
-                    </li>
-                    <? } ?>
-                    <li class="list-empty" style="display:none">검색결과가 없습니다.</li>
-                    <!-- End of grid blocks -->
-                  </ul>
+                   </div>
+               
                   <!--[D] 페이지네이션 -->
                     <div class="wrap_pagination">
                         <!--[D] 검색시 back버튼 -->
-                        <a href="#" class="history">이전 목록으로 돌아가기</a>
+                        <!-- <a href="#" class="history">이전 목록으로 돌아가기</a> -->
                         <!--//[D] 검색시 back버튼 -->
                         <ul class="pagination">
                             <li class="goto first"><a href="#">처음으로</a></li>
@@ -206,11 +188,10 @@ $uname = $_SESSION['uname'];
                         </ul>
                     </div>
                   <!--// 페이지네이션 -->
-                </div>
-            </div>       
+               
         </div><!-- /.content-wrapper -->
 
-       <?php include("../pages/tpl/footer.tpl");?>
+       <?php include("../pages/tpl/cs-footer.tpl");?>
        
     </div><!-- ./wrapper -->
             
@@ -231,6 +212,43 @@ $uname = $_SESSION['uname'];
     $(".select2").select2({
         minimumResultsForSearch: -1
     });
+    
+    $('#select_category').click(function() {
+        	
+	       if($('#ul_category').css('display') == 'none'){
+	       	  $('#ul_category').show();	
+	       } else{
+	       	  $('#ul_category').hide();
+	       }
+        });
+        
+    $('#ul_category li').click(function() {
+       	$("#select_category").get(0).innerHTML = ( $(this).children().get(0).innerHTML+ '<span class="select_arrow"></span>');
+       	$("#select_category").css("color", "#4f555e");
+       	$('#ul_category').hide();
+    });
+        
+	function faqList(_id) 
+	{	
+	   var obj = $("#answer_"+_id);
+	   
+	   $(".question").css("background-color", "#fff");
+	   $($(".question").find(".arrow")).css("background-image", "url(../../dist/img/list_arrow.png)");
+	   
+	   if( obj.css('display') == 'block'){
+	   		obj.hide();
+	   }
+	   else{
+	   		$(".answer").hide()
+
+	   		obj.show();
+	   		$("#question_"+_id).css("background-color", "#fafafa");
+	   		
+	   		console.log($($("#question_"+_id).find(".arrow")));
+	   		$($("#question_"+_id).find(".arrow")).css("background-image", "url(../../dist/img/list_arrow_opened.png)");
+	   }
+	}
+
     </script>
   </body>
 </html>
