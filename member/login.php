@@ -76,8 +76,7 @@ $uname = $_SESSION['uname'];
 	   							<strong class="on">ON</strong>
 	   						</div>
 	           			</div>
-	           			<a href="#" class="btn_c1">로그인</a>
-	           			<input type='submit' tabindex='3' value='로그인' style='height:50px'/>
+	           			<input type='submit' tabindex='3' value='로그인' class="btn_c1">
 	           		</div>
            		</div>
            		</form>
