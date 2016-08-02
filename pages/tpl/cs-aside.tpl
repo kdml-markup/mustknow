@@ -8,10 +8,10 @@
           </a>
           <ul class="treeview-menu">
               <li class="dropdown-hover">
-                <a href="#">콘텐츠 요청</a>
+                <a href="/mustknow/cscenter/request.php">콘텐츠 요청</a>
               </li>
               <li class="dropdown-hover">
-                  <a href="#">문의메일 상담</a>
+                  <a href="/mustknow/cscenter/cscenter_mail.php">문의메일 상담</a>
               </li>
               <li class="dropdown-hover">
                   <a href="#">아이디/비밀번호 찾기</a>
@@ -25,7 +25,7 @@
           </a>
           <ul class="treeview-menu">
               <li class="dropdown-hover">
-                  <a href="#">전체</a>
+                  <a href="/mustknow/cscenter/faq_result.php">전체</a>
               </li>
               <li class="dropdown-hover">
                   <a href="#">회원제도</a>
@@ -51,7 +51,7 @@
           </ul>
         </li>
         <li class="active treeview">
-          <a href="#">
+          <a href="/mustknow/cscenter/notice.php">
             <span class="cs_notice"></span> <span>공지사항</span>
           </a>
         </li>

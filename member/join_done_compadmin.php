@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -44,10 +44,10 @@ $uname = $_SESSION['uname'];
                 
            		<div class="join_done">
            			<div class="acocuntBox acocuntBox1">
-           					<img src="../../dist/img/img_usertype2.png" />
+           					<img src="/mustknow/dist/img/img_usertype2.png" />
            				<p>기업 회원가입을 축하드립니다.</p>
            				<span>기업 회원 가입이 완료되었습니다.<br>지금부터 머스트노우만의 서비스를 이용해보세요.</span>
-	           			<a href="#" class="btn_c1">메인으로 이동</a>
+	           			<a href="/mustknow/" class="btn_c1">메인으로 이동</a>
 	           		</div>
            		</div>
            		<div class="comp_signup_notice">
@@ -68,7 +68,7 @@ $uname = $_SESSION['uname'];
           <div class="modal-header">
             <h4 class="modal-title" id="myModalLabel">그룹 설정 안내 가이드</h4>
             <span class="close">
-            	<img src="../../dist/img/bnt_delete_02.png" />
+            	<img src="/mustknow/dist/img/bnt_delete_02.png" />
             </span>
           </div>
           <div class="modal-body">
@@ -95,9 +95,9 @@ $uname = $_SESSION['uname'];
     </div>
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

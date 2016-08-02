@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -250,16 +250,16 @@ $uname = $_SESSION['uname'];
             <em class="asterisk">*</em>표시가 있는 항목은 필수 입력 항목입니다.<br>가입을 위해 누락된 정보를 확인하고 입력해주세요.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-confirm" >확인</button>
+            <a href="join_done_compadmin.php" class="btn btn-confirm" >확인</a>
           </div>
         </div>
       </div>
     </div>
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

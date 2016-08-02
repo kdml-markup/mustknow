@@ -6,7 +6,7 @@
     <nav class="navbar navbar-static-top" role="navigation">
       <!-- Sidebar toggle button-->
       <div class="navbar-notice">
-          <div class="limit"><em><? echo $uname; ?></em>님의 이용가능한 서비스 기간이 <em>24일</em> 남았습니다. <a href="" class="goto">서비스 신청하기</a></div>
+          <div class="limit"><em><? echo $uname; ?></em>님의 이용가능한 서비스 기간이 <em>24일</em> 남았습니다. <a href="/mustknow/service_apply/service_application.php" class="goto">서비스 신청하기</a></div>
           <div class=""></div>
       </div>
       <div class="navbar-custom-menu">
@@ -61,9 +61,9 @@
                         </ol>
                     </div>
                     <div class="user-apply">
-                        <h3 class="sb">서비스 신청하기</h3> 
+                        <h3 class="sb">서비스 신청하기</h3>
                         <p>서비스 기간을 연장하고 싶은신가요?</p>
-                        <a href="/mustknow/login.php" class="btn btn-blue">로그인</a>
+                        <a href="/mustknow/member/login.php" class="btn btn-blue">로그인</a>
                     </div>
                 </div>
             <? else: ?>
@@ -72,13 +72,13 @@
                   <li class="user-false">
                     <h3>머스트노우 서비스에 아직 가입하시지 않으셨나요?</h3> 
                     <p>전문 법률 콘텐츠 서비스 이용을 원하신다면, 회원가입을 해주세요.</p>
-                    <a href="#" class="btn btn-default btn-flat">가입하기</a>
+                    <a href="/mustknow/member/join_terms.php" class="btn btn-default btn-flat">가입하기</a>
                   </li>
                   <li class="user-true">
                     <h3>이미 서비스에 가입한 회원이신가요?</h3> 
                     <p>회원가입을 이미 완료한 회원이시라면 로그인을 해주세요.</p>
                     <a href="/mustknow/login.php" class="btn btn-default btn-flat">로그인</a>
-                    <a href="#" class="find">아이디 / 비밀번호를 잃어버리셨나요?</a>
+                    <a href="/mustknow/member/id_pw_find.php" class="find">아이디 / 비밀번호를 잃어버리셨나요?</a>
                   </li>
                 </ul>
             <? endif ?>

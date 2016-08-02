@@ -21,7 +21,7 @@
        /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li><a href="/"><span class="icon-home"></span><span>Home</span></a></li>
+        <li><a href="/mustknow/"><span class="icon-home"></span><span>Home</span></a></li>
         <li class="active treeview">
           <a href="#">
             <span class="icon-case"></span> <span>Case Study</span><i class="angle-left"></i>
@@ -93,7 +93,7 @@
                     <li><a href="#">IT분쟁</a></li>
                 </ul>
               </li>
-              <li class=""><a href="#">Q&A</a></li>
+              <li class=""><a href="/mustknow/casestudy/qna.php">Q&A</a></li>
           </ul>
         </li>
         <li class="active treeview">
@@ -161,11 +161,11 @@
             <span class="icon-form"></span> <span>Form</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
-              <li class=""><a href="/mustknow/form/01_.php">계약서</a></li>
-              <li class=""><a href="/mustknow/form/02_.php">내용증명</a></li>
-              <li class=""><a href="/mustknow/form/03_.php">고소장</a></li>
-              <li class=""><a href="/mustknow/form/04_.php">매뉴얼</a></li>
-              <li class=""><a href="/mustknow/form/05_.php">회사서식</a></li>
+              <li class=""><a href="/mustknow/form/contract.php">계약서</a></li>
+              <li class=""><a href="/mustknow/form/information-above.php">내용증명</a></li>
+              <li class=""><a href="/mustknow/form/manual.php">고소장</a></li>
+              <li class=""><a href="/mustknow/form/complaint.php">매뉴얼</a></li>
+              <li class=""><a href="/mustknow/form/format.php">회사서식</a></li>
           </ul>
         </li>
       </ul>

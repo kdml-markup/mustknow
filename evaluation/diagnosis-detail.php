@@ -199,11 +199,11 @@ $uname = $_SESSION['uname'];
     </div>
     
     <!-- iCheck 1.0.1 -->
-    <script src="../../plugins/iCheck/icheck.min.js"></script>
+    <script src="/mustknow/plugins/iCheck/icheck.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
       $(function () {
         //iCheck for checkbox and radio inputs

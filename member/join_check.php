@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -45,20 +45,20 @@ $uname = $_SESSION['uname'];
            		<div class="left-col">
            			<h3>회원 유형 선택</h3>
            			<div class="acocuntBox acocuntBox1">
-           				<img src="../../dist/img/img_usertype1.png" />
+           				<img src="/mustknow/dist/img/img_usertype1.png" />
            				<p>개인 회원</p>
            				<span><strong>*</strong> 일반 회원으로 무료 회원 및 유료회원으로 가입이 가능합니다.<br>머스트노우의 콘텐츠를 열람/구매할 수 있습니다.</span>
-	           			<a href="#" class="btn_c1">개인 회원 가입</a>
+	           			<a href="join_form.php" class="btn_c1">개인 회원 가입</a>
 	           		</div>
            		</div>
            		
            		<div class="right-col">
            			<div>
            				<div class="acocuntBox acocuntBox2">
-           					<img src="../../dist/img/img_usertype2.png" />
+           					<img src="/mustknow/dist/img/img_usertype2.png" />
            					<p>기업 회원</p>
            					<span><strong>*</strong>각 기업에 처음으로 가입한 기업 회원은 기업 관리자로 지정되고,<br>기업 관리자는 내부 이용자를 위한 다수의 서브 아이디를 등록/관리할 수 있습니다.</span>
-		           			<a href="#" class="btn_c2">개인 회원 가입</a>
+		           			<a href="join_form_compadmin.php" class="btn_c2">개인 회원 가입</a>
 		           		</div>
            			</div>       		
            		</div>
@@ -70,9 +70,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

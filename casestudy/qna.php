@@ -49,7 +49,7 @@ $uname = $_SESSION['uname'];
                 		<strong>2월 13일 ~ 3월 12일</strong>
                 	</div>
                 	<p>
-                		<a href="#">새 글 작성하기</a>
+                		<a href="qna-write.php">새 글 작성하기</a>
                 	</p>
                 </div>
             </div>
@@ -166,7 +166,7 @@ $uname = $_SESSION['uname'];
                             <tr>
                                 <td class="td-type-1"><span>9,999</span></td>
                                 <td class="td-type-2"><span>형사고소</span></td>
-                                <td class="title"><a href="video-lectures-detail.php"><? echo $array[$i]['title'] ?></a></td>
+                                <td class="title"><a href="qna-detail.php"><? echo $array[$i]['title'] ?></a></td>
                                 <td class="td-type-1"><span>영업3팀</span></td>
                                 <td class="td-type-1"><span>홍길동</span></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['date'] ?></span></td>
@@ -230,9 +230,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

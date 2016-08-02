@@ -57,9 +57,9 @@ $uname = $_SESSION['uname'];
                     <div class="lt_section">
                         <div id="carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="item active"><img src="../../dist/img/@temp_plaint.jpg" alt="고소장"></div>
-                                <div class="item"><img src="../../dist/img/@temp_plaint.jpg" alt="고소장"></div>
-                                <div class="item"><img src="../../dist/img/@temp_plaint.jpg" alt="고소장"></div>
+                                <div class="item active"><img src="/mustknow/dist/img/@temp_plaint.jpg" alt="고소장"></div>
+                                <div class="item"><img src="/mustknow/dist/img/@temp_plaint.jpg" alt="고소장"></div>
+                                <div class="item"><img src="/mustknow/dist/img/@temp_plaint.jpg" alt="고소장"></div>
                             </div>
                             <div id="carousel-index">1 / 3</div>
                             <a class="left carousel-control" href="#carousel" data-slide="prev">이전</a>
@@ -131,9 +131,9 @@ $uname = $_SESSION['uname'];
     <!-- Slimscroll -->
     <script src="/mustknow/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script type="text/javascript">
     $(function () {
         /* favorite */

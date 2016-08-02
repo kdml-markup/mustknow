@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -113,16 +113,16 @@ $uname = $_SESSION['uname'];
             가입을 위해 약관을 확인하시고 동의해주세요.
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-confirm">확인</button>
+            <a href="join_check.php" type="button" class="btn btn-confirm">확인</a>
           </div>
         </div>
       </div>
     </div>
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );
@@ -163,7 +163,7 @@ $uname = $_SESSION['uname'];
 	      } else { 
 	      obj.style.display = "none"; 
 	      document.getElementById("question"); 
-	   }; 
+	   };
 	} 
 	
 	$(".c_outside").click(function(){
@@ -219,7 +219,6 @@ $uname = $_SESSION['uname'];
         	$($(this).parent()).addClass("checked");
         }
 	});
-    
     
     </script>
   </body>

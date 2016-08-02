@@ -183,9 +183,9 @@ $uname = $_SESSION['uname'];
                       <? if(!$array[$i]['img']): ?>
                       <p><a href="column-detail.php"><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></a></p>
                       <? elseif($array[$i]['video']): ?>
-                      <div class="video"><a href="column-detail.php" class="img"><img src="<? echo $array[$i]['img'] ?>"></a></div>
+                      <div class="video"><a href="column-detail.php" class="img"><img src="/mustknow/<? echo $array[$i]['img'] ?>"></a></div>
                       <? else : ?>
-                      <a href="column-detail.php" class="img"><img src="<? echo $array[$i]['img'] ?>"></a>
+                      <a href="column-detail.php" class="img"><img src="/mustknow/<? echo $array[$i]['img'] ?>"></a>
                       <? endif ?>
                       <button type="button" class="favorites">즐겨찾기 추가</button>
                     </li>
@@ -224,9 +224,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

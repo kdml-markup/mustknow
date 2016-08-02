@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -83,37 +83,37 @@ $uname = $_SESSION['uname'];
 	        		<ul>
 	        			<li>
 	        				<a href="#">
-	        					<img src="/dist/img/faq_menu1.png" />
+	        					<img src="/mustknow/dist/img/faq_menu1.png" />
 	        				</a>
 	        			</li>
 	        			<li>
 	        				<a href="#">
-	        					<img src="/dist/img/faq_menu2.png" />
+	        					<img src="/mustknow/dist/img/faq_menu2.png" />
 	        				</a>
 	        			</li>
 	        			<li>
 	        				<a href="#">
-	        					<img src="/dist/img/faq_menu3.png" />
+	        					<img src="/mustknow/dist/img/faq_menu3.png" />
 	        				</a>
 	        			</li>
 	        			<li>
 	        				<a href="#">
-	        					<img src="/dist/img/faq_menu4.png" />
+	        					<img src="/mustknow/dist/img/faq_menu4.png" />
 	        				</a>
 	        			</li>
 	        			<li>
 	        				<a href="#">
-	        					<img src="/dist/img/faq_menu5.png" />
+	        					<img src="/mustknow/dist/img/faq_menu5.png" />
 	        				</a>
 	        			</li>
 	        			<li>
 	        				<a href="#">
-	        					<img src="/dist/img/faq_menu6.png" />
+	        					<img src="/mustknow/dist/img/faq_menu6.png" />
 	        				</a>
 	        			</li>
 	        			<li>
 	        				<a href="#">
-	        					<img src="/dist/img/faq_menu7.png" />
+	        					<img src="/mustknow/dist/img/faq_menu7.png" />
 	        				</a>
 	        			</li>
 	        		</ul>
@@ -281,9 +281,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

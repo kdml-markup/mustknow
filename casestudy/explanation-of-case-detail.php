@@ -54,8 +54,8 @@ $uname = $_SESSION['uname'];
                     </div>
                     <div class="author">
                         <ul>
-                            <li><img src="../../dist/img/author.png" alt="작성자 사진"><em>작성자</em><strong>박진만</strong></li>
-                            <li><img src="../../dist/img/author.png" alt="감수자 사진"><em>감수자</em><strong>박진만</strong></li>
+                            <li><img src="/mustknow/dist/img/author.png" alt="작성자 사진"><em>작성자</em><strong>박진만</strong></li>
+                            <li><img src="/mustknow/dist/img/author.png" alt="감수자 사진"><em>감수자</em><strong>박진만</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -98,9 +98,9 @@ $uname = $_SESSION['uname'];
     <!-- Slimscroll -->
     <script src="/mustknow/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script type="text/javascript">
     $(function () {
         /* favorite */

@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+     <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -65,7 +65,7 @@ $uname = $_SESSION['uname'];
 	           				<span class="incorrect">인증번호 입력이 잘못되었습니다. 다시 인증해주세요.</span>    
 	           			</p>
 	           			<input class="c_outside" type="text" id="user_id" placeholder="이메일로 전송된 인증번호를 정확하게 입력해주세요.">
-	           			<a href="#" class="btn_c1">아이디 찾기</a>
+	           			<a href="id_result.php" class="btn_c1">아이디 찾기</a>
 	           		</div>
            		</div>           		
            		<div class="right-col">
@@ -92,7 +92,7 @@ $uname = $_SESSION['uname'];
 	           				<span class="incorrect">인증번호 입력이 잘못되었습니다. 다시 인증해주세요.</span>    
 	           			</p>
 	           			<input class="c_outside" type="text" id="user_id" placeholder="이메일로 전송된 인증번호를 정확하게 입력해주세요.">
-		           		<a href="#" class="btn_c1">비밀번호 찾기</a>
+		           		<a href="id_pw_reset.php" class="btn_c1">비밀번호 찾기</a>
 	           		</div>
            		</div>
                
@@ -120,9 +120,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

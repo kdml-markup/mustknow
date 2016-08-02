@@ -76,7 +76,7 @@ $uname = $_SESSION['uname'];
                             <h3>등급</h3>
                             <div class="rating"><strong>B</strong><span>양호</span></div>
                             <div class="rating f" style="display:none"><strong>F</strong><span>위험</span></div>
-                            <img src="../../dist/img/graph-rating.gif" alt="등급표">
+                            <img src="/mustknow/dist/img/graph-rating.gif" alt="등급표">
                         </div>
                         <div class="slot">
                             <h3>평가</h3>
@@ -100,13 +100,13 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
 <!-- iCheck 1.0.1 -->
-    <script src="../../plugins/iCheck/icheck.min.js"></script>
+    <script src="/mustknow/plugins/iCheck/icheck.min.js"></script>
     <!-- jQuery Knob -->
-    <script src="../../plugins/knob/jquery.knob.js"></script>
+    <script src="/mustknow/plugins/knob/jquery.knob.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
       $(function () {
         //dropdown menu

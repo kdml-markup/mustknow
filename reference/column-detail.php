@@ -54,7 +54,7 @@ $uname = $_SESSION['uname'];
                     </div>
                     <div class="author">
                         <ul>
-                            <li><img src="../../dist/img/author.png" alt="작성자 사진"><em>작성자</em><strong>박진만</strong></li>
+                            <li><img src="/mustknow/dist/img/author.png" alt="작성자 사진"><em>작성자</em><strong>박진만</strong></li>
                         </ul>
                     </div>
                 </div>
@@ -71,7 +71,7 @@ $uname = $_SESSION['uname'];
                             <!--//[D] 동영상 -->
                             <!--[D] 이미지 -->
                             <div class="img_wrap">
-                               <img src="../../dist/img/@temp_column.jpg">
+                               <img src="/mustknow/dist/img/@temp_column.jpg">
                             </div>
                             <!--//[D] 이미지 -->
                             <div class="media-author">출처 : 네이버 영화. 내부자들 메인포스터 우장훈 검사컷.</div>
@@ -105,9 +105,9 @@ $uname = $_SESSION['uname'];
     <!-- Slimscroll -->
     <script src="/mustknow/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script type="text/javascript">
     $(function () {
         /* favorite */

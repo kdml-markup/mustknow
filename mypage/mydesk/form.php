@@ -113,59 +113,59 @@ $uname = $_SESSION['uname'];
                     );
                  ?>
                  <!--[D] list view -->
-<div class="table-list contract _table-list">
-                            <table>
-                                <caption>알림내역 전체</caption>
-                                <colgroup>
-                                    <col width="72px">
-                                    <col width="72px">
-                                    <col width="99px">
-                                    <col width="93px">
-                                    <col width="75px">
-                                    <col />
-                                    <col width="103px" />
-                                </colgroup>
-                                <thead>
-                                    <tr>
-                                        <th scope="col"><input type="checkbox"></th>
-                                        <th scope="col"><span>no.</span></th>
-                                        <th scope="col"><span>유형</span><em class="controller"></em></th>
-                                        <th scope="col"><span>카테고리</span><em class="controller"></em></th>
-                                        <th scope="col"><span>중요도</span></th>
-                                        <th scope="col"><span>제목</span><em class="controller"></em></th>
-                                        <th scope="col"><span>다운로드</span></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr style="display: none;">
-                                        <td class="list-empty" colspan="4">
-                                            <span>알림내역이 없습니다.</span>
-                                        </td>
-                                    </tr>
-                                    <?                     
-                                    $count = 0;
-                                    while(++$count <= 16){ 
-                                        $i = rand(0,7);
-                                    ?>
-                                    <tr>
-                                        <td class="td-type-first"><input type="checkbox" id="fv<? echo $count ?>"><label for="fv<? echo $count ?>" class="blind"><? echo $array[$i]['title'] ?></label></td>
-                                        <td class="td-type-1"><span>9,999</span></td>
-                                        <td class="td-type-1"><span><? echo $array[$i]['type'] ?></span></td>
-                                        <td class="td-type-1"><span><? echo $array[$i]['category'] ?></span></td>
-                                        <td class="td-type-1"><span><? echo $array[$i]['impt'] ?></span></td>
-                                        <td class="title"><a href="check-and-tip-detail.php"><? echo $array[$i]['title'] ?><? if( $array[$i]['new'] == "true" ) {?><i class="new">new</i><?} ?></a></td>
-                                        <td class="download">
-                                            <span class=""></span>
-                                            <ul class="file_type" style="display: none;">
-                                                <li class="zip"><span><a href="#">zip</a></span></li>
-                                                <li class="hwp"><span><a href="#">hwp</a></span></li>
-                                                <li class="pdf"><span><a href="#">pdf</a></span></li>
-                                                <li class="doc"><span><a href="#">doc</a></span></li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                    <? } ?>
-                                </tbody>
+                    <div class="table-list contract _table-list">
+                        <table>
+                            <caption>알림내역 전체</caption>
+                            <colgroup>
+                                <col width="72px">
+                                <col width="72px">
+                                <col width="99px">
+                                <col width="93px">
+                                <col width="75px">
+                                <col />
+                                <col width="103px" />
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"><input type="checkbox"></th>
+                                    <th scope="col"><span>no.</span></th>
+                                    <th scope="col"><span>유형</span><em class="controller"></em></th>
+                                    <th scope="col"><span>카테고리</span><em class="controller"></em></th>
+                                    <th scope="col"><span>중요도</span></th>
+                                    <th scope="col"><span>제목</span><em class="controller"></em></th>
+                                    <th scope="col"><span>다운로드</span></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr style="display: none;">
+                                    <td class="list-empty" colspan="4">
+                                        <span>알림내역이 없습니다.</span>
+                                    </td>
+                                </tr>
+                                <?                     
+                                $count = 0;
+                                while(++$count <= 16){ 
+                                    $i = rand(0,7);
+                                ?>
+                                <tr>
+                                    <td class="td-type-first"><input type="checkbox" id="fv<? echo $count ?>"><label for="fv<? echo $count ?>" class="blind"><? echo $array[$i]['title'] ?></label></td>
+                                    <td class="td-type-1"><span>9,999</span></td>
+                                    <td class="td-type-1"><span><? echo $array[$i]['type'] ?></span></td>
+                                    <td class="td-type-1"><span><? echo $array[$i]['category'] ?></span></td>
+                                    <td class="td-type-1"><span><? echo $array[$i]['impt'] ?></span></td>
+                                    <td class="title"><a href="check-and-tip-detail.php"><? echo $array[$i]['title'] ?><? if( $array[$i]['new'] == "true" ) {?><i class="new">new</i><?} ?></a></td>
+                                    <td class="download">
+                                        <span class=""></span>
+                                        <ul class="file_type" style="display: none;">
+                                            <li class="zip"><span><a href="#">zip</a></span></li>
+                                            <li class="hwp"><span><a href="#">hwp</a></span></li>
+                                            <li class="pdf"><span><a href="#">pdf</a></span></li>
+                                            <li class="doc"><span><a href="#">doc</a></span></li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <? } ?>
+                            </tbody>
                      </table>
                 </div>
                   <!--[D] 페이지네이션 -->
@@ -216,13 +216,13 @@ $uname = $_SESSION['uname'];
     </div>
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $(function () {
         //dropdown menu
-        $("._nav-mypage dl:eq(1) dt").addClass("on mn5");
+        $("._nav-mypage dl:eq(1) dt").addClass("on mn4");
         
         $(".table-list table tr td.download").click(function() {
             $(".table-list table tr td.download").removeClass("open");

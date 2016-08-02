@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -41,7 +41,7 @@ $uname = $_SESSION['uname'];
                 <h2><span>로그인</span><strong>Login</strong></h2>
            </div>
            <div class="content main">
-                
+                <form method='post' action='login_ok.php'>
            		<div class="left-col">
            			<h3>로그인</h3>
            			<div class="acocuntBox acocuntBox1">
@@ -49,14 +49,14 @@ $uname = $_SESSION['uname'];
 	           				<label for="user_id">아이디</label>
 	           				<em class="error" style="display: none;">아이디를 입력해주세요.</em>
 	           				<em class="error" style="display: none;">등록된 아이디가 아닙니다. 다시 한 번 확인해주세요.</em>
-	           				<input type="text" id="user_id" title="아이디를 입력해주세요." placeholder="아이디를 입력해주세요."/>
+	           				<input type='text' name='uid' tabindex='1' id="user_id" title="아이디를 입력해주세요." placeholder="아이디를 입력해주세요."/>
 	           				<button type="button"id="userid_clear" tabindex="-1" onclick="$('#userid').val('')">아이디 입력값 삭제하기</button>
 	           			</div>
 	           			<div>
 	           				<label for="password">비밀번호</label>
 	           				<em class="error" style="display: none;">패스워드를 입력해주세요.</em>
 	           				<em class="error" style="display: none;">패스워드가 일치하지 않습니다.</em>
-	           				<input type="password" id="password" title="비밀번호를 입력해주세요." placeholder="비밀번호를 입력해주세요."/>
+	           				<input type='password' name='upw' tabindex='2' id="password" title="비밀번호를 입력해주세요." placeholder="비밀번호를 입력해주세요."/>
 	           				<button type="button"id="userid_clear" tabindex="-1" onclick="$('#userid').val('')">아이디 입력값 삭제하기</button>
 	           			</div>
 	           			<div class="login_status">
@@ -68,7 +68,7 @@ $uname = $_SESSION['uname'];
 		                		</label>
 		                	</div>
 	   						<div class="ip_security">
-	   							<img src="../../dist/img/icon_security.png" />
+	   							<img src="/mustknow/dist/img/icon_security.png" />
 	   							<span>
 	   								IP 보안
 	   							</span>
@@ -77,22 +77,24 @@ $uname = $_SESSION['uname'];
 	   						</div>
 	           			</div>
 	           			<a href="#" class="btn_c1">로그인</a>
+	           			<input type='submit' tabindex='3' value='로그인' style='height:50px'/>
 	           		</div>
            		</div>
+           		</form>
            		
            		<div class="right-col">
            			<div>
            				<h3>회원가입</h3>
            				<div class="acocuntBox acocuntBox2">
            					<p><em>*&nbsp;</em>아직 머스트노우에 가입하지 않으셨나요?</p>
-           					<a href="#" class="btn_c2">회원가입</a>
+           					<a href="join_terms.php" class="btn_c2">회원가입</a>
            				</div>
            			</div>           			
            			<div>
            				<h3>아이디/비밀번호 찾기</h3>
            				<div class="acocuntBox acocuntBox3">
            					<p><em>*&nbsp;</em>아이디/비밀번호를 잊어버리셨나요?</p>
-           					<a href="#" class="btn_c3">아이디/비밀번호 찾기</a>
+           					<a href="id_pw_find.php" class="btn_c3">아이디/비밀번호 찾기</a>
            				</div>
            			</div>           			
            		</div>
@@ -104,9 +106,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

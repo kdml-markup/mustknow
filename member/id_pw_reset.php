@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -54,7 +54,7 @@ $uname = $_SESSION['uname'];
 	           			<input class="c_outside" type="text" id="user_id" placeholder="비밀번호를 한번 더 입력해주세요.">
            				<div class="find_result_btn">
 							<a href="#" class="btn_c2">취소</a>
-		           			<a href="#" class="btn_c1">확인</a>
+		           			<a href="pw_result.php" class="btn_c1">확인</a>
 		           		</div>
 	           		</div>
            		</div>
@@ -66,9 +66,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

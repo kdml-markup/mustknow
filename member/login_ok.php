@@ -20,4 +20,4 @@ $_SESSION['uname'] = $members[$uid]['name'];
 $_SESSION['uuser'] = $members[$uid]['user'];
 $_SESSION['ucorp'] = $members[$uid]['admin'];
 ?>
-<meta http-equiv='refresh' content='0;url=index.php'>
+<meta http-equiv='refresh' content='0;url=/mustknow/index.php'>

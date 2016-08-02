@@ -28,17 +28,17 @@ $uname = $_SESSION['uname'];
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <?php include("../pages/tpl/advertising.tpl"); ?> 
+  <body class="hold-transition skin-blue sidebar-mini inside-land">
+    <?php include("../pages/tpl/advertising.tpl"); ?>
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
-            include("../pages/tpl/cs-aside.tpl"); ?>
+            include("../pages/tpl/aside.tpl"); ?>
 
       <!-- Content Wrapper. Contains page content -->
-        <div class="content-wrapper cscenter_wrap f2 notice_wrap">
-           <div class="faq_content_top">
-                <h2><span>공지사항</span></h2>
+        <div class="content-wrapper">
+           <div class="title-area">
+                <h2><span>회사서식</span></h2>
            </div>
            <div class="content main">
                <div class="sch_filter">
@@ -47,64 +47,65 @@ $uname = $_SESSION['uname'];
                 	</div>
                 	<div class="filter_area">
                 		<div class="list-type _list-type">
-                			<!-- <ul>
+                			<ul>
                 				<li class="card" style="margin-right: 8px;">
                 					<a href="#"><em>썸네일형</em></a>
                 				</li>
                 				<li class="list on">
                 					<a href="#"><em>리스트형</em></a>
                 				</li>
-                			</ul> -->
+                			</ul>
                 			<div class="sort">
                                 <select class="select2" style="width: 100%;">
-                                  <option selected="selected">작성일순</option>
-                                  <option>조회순</option>
+                                  <option selected="selected">조회순</option>
+                                  <option>카테고리순</option>
+                                  <option>중요도순</option>
                                   <option>제목순</option>
                                 </select>
                             </div>
                 		</div>
                 	</div>
-                </div>	
+                </div>
                 <?
-                    $type = "t3"; //체크앤팁 t3
+                    $type = "t11"; //고소장 t11
                     $array = array(
                         array(
-                            "title"=>"상호계산계약관계에 있는 업체에 제3의 업체로부터 양수한 금전채권을 별도로 행사할 수 있는지 알 수 있는 방법?",
+                            "title"=>"출판물에 의한 명에회손죄 고소장",
                             "date"=>"2016-05-30",
                             "impt"=>"3",
                             "count"=>"20",
                             "txt"=>"우선 상호계산이란 상인간 또는 상인비상 인간에 계속적인 거래관계가 있는 경우에 일정한 기간의 거래로 채권·채무의 총 경우에 일정한 기간의 거래로 채권·채무의 총"
                         ),
                         array(
-                            "title"=>"계약 기간은 다 돼가고 장사는 더 하고 싶을 때",
+                            "title"=>"무고죄 고소장",
                             "date"=>"2016-05-29",
                             "impt"=>"10",
                             "count"=>"1",
                             "txt"=>"나는 상가임차인이다. 그런데 계약기간이 6개월 남짓 남았다. 좀 더 영업을 하고싶다. 난 어떤 조치를 해야 하나?"
                         ),
                         array(
-                            "title"=>"내부자들과 영업비밀",
+                            "title"=>"횡령죄 고소장",
                             "date"=>"2016-05-28",
                             "impt"=>"7",
                             "count"=>"15",
                             "txt"=>"작년에 굉장히 흥행한 ‘내부자들’이라는 영화를 보면, 막판에 우장훈 검사가 장필우 의원 일당의 비리에 대한 직접적인 어쩌고"
                         ),
                         array(
-                            "title"=>"분쟁이 생겼을 때 내용증명을 보내는 것이 유리한가요?",
+                            "title"=>"업무상배임죄 고소장",
                             "date"=>"2016-05-27",
                             "impt"=>"7",
                             "count"=>"120",
                             "txt"=>"향후 법적 분쟁과정에서는, 권리자가 상대방에서 어떤 사전 조치를 취했는지가 객관적으로 증명되는 것이 중요하다..."
                         ),
                         array(
-                            "title"=>"디즈니가 스타워즈를 인수할 수 있었던 비결",
+                            "title"=>"공무상비밀표시무효죄 고소장",
                             "date"=>"2016-05-26",
                             "impt"=>"10",
                             "count"=>"7",
                             "txt"=>"나는 상가임차인이다. 그런데 계약기간이 6개월 남짓 남았다. 좀 더 영업을 하고 싶다. 난 어떤 조치를 해야 하나?"
                         ),
                         array(
-                            "title"=>"스톡옵션을 줄려고 할 때 반드시 알아야 할 6가지",
+                            "title"=>"폭력행위 등 처벌에 관한 볍률 위반, 손괴 고소장",
                             "date"=>"2016-05-26",
                             "impt"=>"10",
                             "count"=>"156",
@@ -113,42 +114,38 @@ $uname = $_SESSION['uname'];
                     );
                  ?>
                  <!--[D] list view -->
-                 <div class="table-list">
+                 <div class="table-list contract _table-list">
                     <table>
-                        <caption>체크앤팁</caption>
+                        <caption>고소장</caption>
                         <colgroup>
-                            <col width="86px">
+                            <col width="55px">
+                            <col width="53px">
+                            <col width="91px">
+                            <col width="51px">
                             <col />
-                            <col width="108px" />
-                            <col width="82px" />
+                            <col width="101px" />
+                            <col width="89px" />
+                            <col width="101px" />
+                            <col width="103px" />
                         </colgroup>
                         <thead>
                             <tr>
+                                <th scope="col"><span></span></th>
                                 <th scope="col"><span>no.</span></th>
+                                <th scope="col"><span>카테고리</span><em class="controller"></em></th>
+                                <th scope="col"><span>중요도</span><em class="controller"></em></th>
                                 <th scope="col"><span>제목</span><em class="controller"></em></th>
-                                <th scope="col"><span>발행일</span><em class="controller"></em></th>
+                                <th scope="col"><span>발행일</span></th>
                                 <th scope="col"><span>조회수</span><em class="controller"></em></th>
+                                <th scope="col"><span>가격</span><em class="controller"></em></th>
+                                <th scope="col"><span>다운로드</span><em class="controller"></em></th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr style="display: none;">
-                                <td class="list-empty" colspan="4">
-                                    <span>검색결과가 없습니다.</span>
+                                <td class="list-empty" colspan="9">
+                                    <span>등록된 컨텐츠가 없습니다.</span>
                                 </td>
-                            </tr>
-                            <tr>
-                                <td class="important_notice"><span></span></td>
-                                <td class="title"><a href="#">2016년 11월 11일부터 머스트노우 회원 가격 및 접속 정책이 변경 됩니다 2016년 11월 11일부터 머스트노우 회원 가격 및 접속의정책이가...<strong class="new_banner"></strong></a></td>
-                                <td class="td-type-1"><span>2016-05-26</span></td>
-                                <td class="td-type-1"><span>27</span></td>
-                            </tr>
-                            <tr class="notice_content" style="display: none;">
-                            	<td colspan="4">                            		
-		       						<div id='answer_<?=$count?>'>
-		       							<span class="icon_re"></span>
-		       							<p>법인회원은 개인사업자 또는 법인명의의 회원을 말하며,  사업체명의 세금계산서가 꼭 필요하신 곳이라면 반드시 법인회원으로 가입해 주셔야 합니다. 법인회원은 추가 내부이용자를 위한 서브(SUB)아이디를 만들 수 있으며, 서브(SUB)아이디 관리를 위한 별도의 관리자페이지가 제공됩니다. 개인회원이 법인회원으로 전환하기를 원하시면 아래 연락처로 전화를 주시면 바로 처리해 드립니다. </p>
-		       						</div>
-                            	</td>
                             </tr>
                             <?                     
                             $count = 0;
@@ -156,20 +153,93 @@ $uname = $_SESSION['uname'];
                                 $i = rand(0,5);
                             ?>
                             <tr>
+                                <td class="sl_down"><span class="on"></span></td><!--[D] 활성화시 on 클래스 추가 -->
                                 <td class="td-type-1"><span>9,999</span></td>
-                                <td class="title"><a href="#"><? echo $array[$i]['title'] ?></a></td>
+                                <td class="td-type-2"><span>형사고소</span></td>
+                                <td class="td-type-2"><span><? echo $array[$i]['impt'] ?></span></td>
+                                <td class="title"><a href="format-detail.php"><? echo $array[$i]['title'] ?></a></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['date'] ?></span></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['count'] ?></span></td>
+                                <td class="td-type-1"><span>999,000원</span></td>
+                                <td class="download">
+                                	<span class=""></span>
+                            		<ul class="file_type" style="display: none;top:40px">
+                            			<li class="zip">
+                            				<span>
+                            					<a href="#">zip</a>	
+                            				</span>                            				
+                            			</li>
+                            			<li class="hwp">
+                            				<span>
+                            					<a href="#">hwp</a>	
+                            				</span>                            				
+                            			</li>
+                            			<li class="pdf">
+                            				<span>
+                            					<a href="#">pdf</a>	
+                            				</span>                            				
+                            			</li>
+                            			<li class="doc">
+                            				<span>
+                            					<a href="#">doc</a>	
+                            				</span>                            				
+                            			</li>
+                            		</ul>
+                                </td>
                             </tr>
                             <? } ?>
                         </tbody>
                      </table>
-                   </div>
-               
+                </div>
+                <!--//[D] list view -->
+                <!--[D] card view -->
+                <div role="main">
+                  <ul class="tiles-wrap _tiles-wrap" style="display:none">
+                     <?
+                        $count = 0;
+                        while(++$count <= 16){ 
+                            $i = rand(0,5);
+                    ?>
+                    <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
+                      <strong><em>고소장-부동산</em></strong>
+                        <h3><a href="format-detail.php"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>
+                      <span class="date"><? echo $array[$i]['date'] ?></span><span class="imp"> | 중요도 <? echo $array[$i]['impt'] ?></span><span class="imp"> | 조회수 <? echo $array[$i]['count'] ?></span>
+                        <p><a href="format-detail.php"><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></a></p>
+                       <b>999,000</b>
+                      <button type="button" class="ls_down">form 보관함 추가</button>
+                      <button type="button" class="download">                      	
+                		<ul class="file_type" style="display: block;bottom:30px;right:21px">
+                			<li class="zip">
+                				<span>
+                					<a href="#">zip</a>	
+                				</span>                            				
+                			</li>
+                			<li class="hwp">
+                				<span>
+                					<a href="#">hwp</a>	
+                				</span>                            				
+                			</li>
+                			<li class="pdf">
+                				<span>
+                					<a href="#">pdf</a>	
+                				</span>                            				
+                			</li>
+                			<li class="doc">
+                				<span>
+                					<a href="#">doc</a>	
+                				</span>                            				
+                			</li>
+                		</ul>
+                      </button>
+                    </li>
+                    <? } ?>
+                    <li class="list-empty" style="display:none">등록된 컨텐츠가 없습니다.</li>
+                    <!-- End of grid blocks -->
+                  </ul>
                   <!--[D] 페이지네이션 -->
                     <div class="wrap_pagination">
                         <!--[D] 검색시 back버튼 -->
-                        <!-- <a href="#" class="history">이전 목록으로 돌아가기</a> -->
+                        <a href="#" class="history">이전 목록으로 돌아가기</a>
                         <!--//[D] 검색시 back버튼 -->
                         <ul class="pagination">
                             <li class="goto first"><a href="#">처음으로</a></li>
@@ -188,10 +258,11 @@ $uname = $_SESSION['uname'];
                         </ul>
                     </div>
                   <!--// 페이지네이션 -->
-               
+                </div>
+            </div>       
         </div><!-- /.content-wrapper -->
 
-       <?php include("../pages/tpl/cs-footer.tpl");?>
+       <?php include("../pages/tpl/footer.tpl");?>
        
     </div><!-- ./wrapper -->
             
@@ -212,43 +283,6 @@ $uname = $_SESSION['uname'];
     $(".select2").select2({
         minimumResultsForSearch: -1
     });
-    
-    $('#select_category').click(function() {
-        	
-	       if($('#ul_category').css('display') == 'none'){
-	       	  $('#ul_category').show();	
-	       } else{
-	       	  $('#ul_category').hide();
-	       }
-        });
-        
-    $('#ul_category li').click(function() {
-       	$("#select_category").get(0).innerHTML = ( $(this).children().get(0).innerHTML+ '<span class="select_arrow"></span>');
-       	$("#select_category").css("color", "#4f555e");
-       	$('#ul_category').hide();
-    });
-        
-	function faqList(_id) 
-	{	
-	   var obj = $("#answer_"+_id);
-	   
-	   $(".question").css("background-color", "#fff");
-	   $($(".question").find(".arrow")).css("background-image", "url(/mustknow/dist/img/list_arrow.png)");
-	   
-	   if( obj.css('display') == 'block'){
-	   		obj.hide();
-	   }
-	   else{
-	   		$(".answer").hide()
-
-	   		obj.show();
-	   		$("#question_"+_id).css("background-color", "#fafafa");
-	   		
-	   		console.log($($("#question_"+_id).find(".arrow")));
-	   		$($("#question_"+_id).find(".arrow")).css("background-image", "url(/mustknow/dist/img/list_arrow_opened.png)");
-	   }
-	}
-
     </script>
   </body>
 </html>

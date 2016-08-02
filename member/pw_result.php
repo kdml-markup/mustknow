@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -43,10 +43,10 @@ $uname = $_SESSION['uname'];
            <div class="content main">                
            		<div class="join_done">
            			<div class="acocuntBox acocuntBox1">
-           				<img src="../../dist/img/mailsent.png" />
+           				<img src="/mustknow/dist/img/mailsent.png" />
            				<p>비밀번호가 성공적으로 변경되었습니다.</p>
            				<span>머스트노우 서비스 이용을 위해 다시 로그인을 해주세요.</span>
-		           		<a href="#" class="btn_c1">로그인</a>
+		           		<a href="login.php" class="btn_c1">로그인</a>
 	           		</div>
            		</div>
                
@@ -57,9 +57,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

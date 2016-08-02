@@ -145,11 +145,11 @@ $uname = $_SESSION['uname'];
     </div>
     
     <!-- jQuery Knob -->
-    <script src="../../plugins/knob/jquery.knob.js"></script>
+    <script src="/mustknow/plugins/knob/jquery.knob.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
       $(function () {
 

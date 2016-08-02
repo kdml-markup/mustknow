@@ -176,9 +176,9 @@ $uname = $_SESSION['uname'];
     .select2-container--default .select2-results__option--highlighted,.select2-results__option{height:39px;font-size:13px;padding-left:10px}
     </style>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $(function () {
         //dropdown menu

@@ -13,14 +13,14 @@ $uname = $_SESSION['uname'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>MustKnow</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/plugins/select2/select2.min.css">
-    <link rel="stylesheet" href="/dist/css/AdminLTE.css">
-    <link rel="stylesheet" href="/dist/css/mustknow.ico.css">
-    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
-    <link rel="stylesheet" href="/plugins/bootstrap-wysihtml5/tablelistStyle.css">
-    <script src="/plugins/jQuery/jQuery-2.1.4.min.js"></script>
-    <script src="/plugins/select2/select2.full.min.js"></script>
+    <link rel="stylesheet" href="/mustknow/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/mustknow/plugins/select2/select2.min.css">
+    <link rel="stylesheet" href="/mustknow/dist/css/AdminLTE.css">
+    <link rel="stylesheet" href="/mustknow/dist/css/mustknow.ico.css">
+    <link rel="stylesheet" href="/mustknow/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="/mustknow/plugins/bootstrap-wysihtml5/tablelistStyle.css">
+    <script src="/mustknow/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+    <script src="/mustknow/plugins/select2/select2.full.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -122,7 +122,7 @@ $uname = $_SESSION['uname'];
                         while(++$count <= 20){ 
                             $i = rand(0,5);
                     ?>
-                    <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산" >
+                    <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
                         <h3><a href="#"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>
                         <p><a href="#"><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></a></p>
                         <span>유**</span><span class="name">&nbsp;&nbsp;|&nbsp;&nbsp;<em class="on"></em>&nbsp;999</span><span class="date">&nbsp;&nbsp;|&nbsp;&nbsp;<? echo $array[$i]['date'] ?></span>
@@ -140,11 +140,11 @@ $uname = $_SESSION['uname'];
 				                    </div>
 	                    			<div class="author">
 				                        <ul>
-				                            <li><img src="../../dist/img/author.png" alt="작성자 사진"><em>작성자</em><strong>박진만</strong></li>
-				                            <li><img src="../../dist/img/author.png" alt="감수자 사진"><em>감수자</em><strong>박진만</strong></li>
+				                            <li><img src="/mustknow/dist/img/author.png" alt="작성자 사진"><em>작성자</em><strong>박진만</strong></li>
+				                            <li><img src="/mustknow/dist/img/author.png" alt="감수자 사진"><em>감수자</em><strong>박진만</strong></li>
 				                        </ul>
 				                    </div>
-				                    <a href="#" class="close"><img src="../../dist/img/bnt_delete.png" /></a>
+				                    <a href="#" class="close"><img src="/mustknow/dist/img/bnt_delete.png" /></a>
 				                   </div>
 				                   <div class="article">
 				                   		<p>사례</p>
@@ -274,9 +274,9 @@ $uname = $_SESSION['uname'];
     </div>
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );
@@ -305,10 +305,6 @@ $uname = $_SESSION['uname'];
        	$("#select_category").css("color", "#4f555e");
        	$('#ul_category').hide();
     });
-    
-    
-    
-    
     </script>
   </body>
 </html>

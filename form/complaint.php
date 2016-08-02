@@ -153,17 +153,17 @@ $uname = $_SESSION['uname'];
                                 $i = rand(0,5);
                             ?>
                             <tr>
-                                <td class="bookmark"><span class=""></span></td>
+                                <td class="sl_down"><span class=""></span></td><!--[D] 활성화시 on 클래스 추가 -->
                                 <td class="td-type-1"><span>9,999</span></td>
                                 <td class="td-type-2"><span>형사고소</span></td>
                                 <td class="td-type-2"><span><? echo $array[$i]['impt'] ?></span></td>
-                                <td class="title"><a href="check-and-tip-detail.php"><? echo $array[$i]['title'] ?></a></td>
+                                <td class="title"><a href="complaint-detail.php"><? echo $array[$i]['title'] ?></a></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['date'] ?></span></td>
                                 <td class="td-type-1"><span><? echo $array[$i]['count'] ?></span></td>
                                 <td class="td-type-1"><span>999,000원</span></td>
                                 <td class="download">
                                 	<span class=""></span>
-                            		<ul class="file_type" style="display: none;">
+                            		<ul class="file_type" style="display: none;top:40px">
                             			<li class="zip">
                             				<span>
                             					<a href="#">zip</a>	
@@ -202,13 +202,13 @@ $uname = $_SESSION['uname'];
                     ?>
                     <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
                       <strong><em>매뉴얼-부동산</em></strong>
-                        <h3><a href="check-and-tip-detail.php"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>
+                        <h3><a href="complaint-detail.php"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>
                       <span class="date"><? echo $array[$i]['date'] ?></span><span class="imp"> | 중요도 <? echo $array[$i]['impt'] ?></span><span class="imp"> | 조회수 <? echo $array[$i]['count'] ?></span>
-                        <p><a href="check-and-tip-detail.php"><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></a></p>
+                        <p><a href="complaint-detail.php"><? echo mb_strimwidth($array[$i]['txt'],'0','120',"...","utf-8"); ?></a></p>
                        <b>999,000</b>
-                      <button type="button" class="favorites">즐겨찾기 추가</button>
-                      <button type="button" class="download">다운로드</button>
-                        <ul class="file_type" style="display: block;">
+                      <button type="button" class="ls_down">form 보관함 추가</button>
+                      <button type="button" class="download">                      	
+                		<ul class="file_type" style="display: block;bottom:30px;right:21px">
                             <li class="zip">
                                 <span><a href="#">zip</a></span>                            				
                             </li>
@@ -258,9 +258,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

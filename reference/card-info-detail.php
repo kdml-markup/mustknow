@@ -65,9 +65,9 @@ $uname = $_SESSION['uname'];
                     <div class="rt_section">
                         <div id="carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="item active"><img src="../../dist/img/@temp_cardinfo.jpg" alt="First slide"></div>
-                                <div class="item"><img src="../../dist/img/@temp_cardinfo2.jpg" alt="Second slide"></div>
-                                <div class="item"><img src="../../dist/img/@temp_cardinfo3.jpg" alt="Third slide"></div>
+                                <div class="item active"><img src="/mustknow/dist/img/@temp_cardinfo.jpg" alt="First slide"></div>
+                                <div class="item"><img src="/mustknow/dist/img/@temp_cardinfo2.jpg" alt="Second slide"></div>
+                                <div class="item"><img src="/mustknow/dist/img/@temp_cardinfo3.jpg" alt="Third slide"></div>
                             </div>
                             <div id="carousel-index">1 / 3</div>
                             <div id="carousel-author">출처 : http://www.ttimes.co.kr/index.html?no=2016022318007756573</div>
@@ -90,9 +90,9 @@ $uname = $_SESSION['uname'];
     <!-- Slimscroll -->
     <script src="/mustknow/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script type="text/javascript">
     $(function () {
         /* favorite */

@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -43,12 +43,12 @@ $uname = $_SESSION['uname'];
            <div class="content main">                
            		<div class="join_done">
            			<div class="acocuntBox acocuntBox1 find_result id_result">
-           				<img src="../../dist/img/mailsent.png" />
+           				<img src="/mustknow/dist/img/mailsent.png" />
            				<p>고객님의 아이디 정보를 알려드립니다.</p>
            				<span>김수진 고객님의 ID는  <strong>mustknow_022</strong>  입니다.</span>
            				<div class="find_result_btn">
-           					<a href="#" class="btn_c2">비밀번호 찾기</a>
-		           			<a href="#" class="btn_c1">로그인</a>
+           					<a href="id_pw_find.php" class="btn_c2">비밀번호 찾기</a>
+		           			<a href="login.php" class="btn_c1">로그인</a>
 		           		</div>
 	           		</div>
            		</div>
@@ -60,9 +60,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

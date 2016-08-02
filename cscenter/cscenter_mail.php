@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -107,7 +107,7 @@ $uname = $_SESSION['uname'];
                 	</div>
                 	<div class="btnWrap">
 	                	<a href="" class="act_btn g_btn">취소</a>
-	                	<a href="" class="act_btn b_btn" data-toggle="modal" data-target="#txtover">작성</a>
+	                	<a href="cscenter_mail_sent.php" class="act_btn b_btn" data-toggle="modal" data-target="#txtover">작성</a>
 	                </div>
                 </div>
     	    </div><!-- /.content-wrapper -->
@@ -151,9 +151,9 @@ $uname = $_SESSION['uname'];
     
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

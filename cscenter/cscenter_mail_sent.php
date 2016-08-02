@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -50,7 +50,7 @@ $uname = $_SESSION['uname'];
            </div>
            <div class="content main">
            		<div class="mailsent c_outside">
-           			<img src="../../dist/img/mailsent.png" />
+           			<img src="/mustknow/dist/img/mailsent.png" />
            			<p>문의메일이 성공적으로 접수되었습니다.</p>
            			<span>문의해주신 내용은 담당자가 확인한 후 답변드리겠습니다.</span>
            		</div>    
@@ -95,9 +95,9 @@ $uname = $_SESSION['uname'];
     
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );

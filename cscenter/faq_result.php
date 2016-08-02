@@ -29,7 +29,7 @@ $uname = $_SESSION['uname'];
     <![endif]-->
   </head>
   <body class="main hold-transition skin-blue sidebar-mini inside-land">
-    <!-- <?php include("../pages/tpl/advertising.tpl"); ?> -->
+    <?php include("../pages/tpl/advertising.tpl"); ?> 
     <div class="wrapper">
 
       <?php include("../pages/tpl/header.tpl");
@@ -204,9 +204,9 @@ $uname = $_SESSION['uname'];
     </div><!-- ./wrapper -->
             
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script>
     $( ".tiles-wrap li .favorites" ).click(function() {
       $( this ).toggleClass( "on" );
@@ -241,7 +241,7 @@ $uname = $_SESSION['uname'];
 	   var obj = $("#answer_"+_id);
 	   
 	   $(".question").css("background-color", "#fff");
-	   $($(".question").find(".arrow")).css("background-image", "url(../../dist/img/list_arrow.png)");
+	   $($(".question").find(".arrow")).css("background-image", "url(/mustknow/dist/img/list_arrow.png)");
 	   
 	   if( obj.css('display') == 'block'){
 	   		obj.hide();
@@ -253,7 +253,7 @@ $uname = $_SESSION['uname'];
 	   		$("#question_"+_id).css("background-color", "#fafafa");
 	   		
 	   		console.log($($("#question_"+_id).find(".arrow")));
-	   		$($("#question_"+_id).find(".arrow")).css("background-image", "url(../../dist/img/list_arrow_opened.png)");
+	   		$($("#question_"+_id).find(".arrow")).css("background-image", "url(/mustknow/dist/img/list_arrow_opened.png)");
 	   }
 	}
 

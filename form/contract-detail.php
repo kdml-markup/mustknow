@@ -42,8 +42,8 @@ $uname = $_SESSION['uname'];
                     <a href="#" class="zoom-in">크게</a>
                 </div>
                 <div class="title">
-                    <em><strong>회사서식 &#183; </strong>부동산</em>
-                    <h2>시설물품관리대장</h2>
+                    <em><strong>계약서 &#183; </strong>부동산</em>
+                    <h2>디자인업종 디지털 디자인 분야 제정 표준하도급 계약서</h2>
                     <div class="info">
                         <ul>
                             <li><em>발행일</em>2015-11-14</li>
@@ -57,9 +57,9 @@ $uname = $_SESSION['uname'];
                     <div class="lt_section">
                         <div id="carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
-                                <div class="item active"><img src="../../dist/img/@temp_format.jpg" alt="서식"></div>
-                                <div class="item"><img src="../../dist/img/@temp_format.jpg" alt="서식"></div>
-                                <div class="item"><img src="../../dist/img/@temp_format.jpg" alt="서식"></div>
+                                <div class="item active"><img src="/mustknow/dist/img/@temp_contract.jpg" alt="소프트웨어 사업 표준하도급 기본계약서"></div>
+                                <div class="item"><img src="/mustknow/dist/img/@temp_contract.jpg" alt="소프트웨어 사업 표준하도급 기본계약서"></div>
+                                <div class="item"><img src="/mustknow/dist/img/@temp_contract.jpg" alt="소프트웨어 사업 표준하도급 기본계약서"></div>
                             </div>
                             <div id="carousel-index">1 / 3</div>
                             <a class="left carousel-control" href="#carousel" data-slide="prev">이전</a>
@@ -70,7 +70,7 @@ $uname = $_SESSION['uname'];
                         <div class="section">
                            <div class="purchasing_info">
                                 <ul>
-                                    <li><strong>분류</strong><span>내용증명</span></li>
+                                    <li><strong>분류</strong><span>계약서</span></li>
                                     <li><strong>장수</strong><span>24장</span></li>
                                     <li><strong>형식</strong><span>hwp, pdf, doc</span></li>
                                     <!--[D] 결제 전 노출 -->
@@ -92,9 +92,9 @@ $uname = $_SESSION['uname'];
                             </div>
                             <div class="description">
                                 <h3>개요</h3>
-                                <p>시설물품관리대장</p>
+                                <p>디자인업종 디지털 디자인 분야 제정 표준하도급 계약서 디자인업종 디지털 디자인 분야 제정 표준하도급 계약서</p>
                                 <h3>목차</h3>
-                                <p class="scroll"><span>증서나 원서, 신고서 등의 서류가 회사서식에 포함됩니다. 일반적으로 신청자, 서식의 종류, 사용목적, 등록 번호, 날짜, 비고 등의 항목이 대부분의 서식에 포함 됩니다. 증서나 원서, 신고서 등의 서류가 회사서식에 포함 됩니다. 일반적으로 신청자, 서식의 종류, 사용목적, 등록 번호, 날짜, 비고 등의 항목이 대부분의 서식에 포함됩니다.</span></p>
+                                <p class="scroll"><span>표준하도급계약서는 하도급법 및 업종 특성등을 고려하여 법 위반을 최소화하고 계약서 작성시의 편의를 제공할 목적으로 공정거래위원 회에서 보급하는 표준계약서 입니다. 이와 관련하여 문의사항이 있으시면 기업거래정책거래 위원회에서 보급하는 표준계약서입니다. 이와 관련하여 문의사항이 있으시면 기업거래 정책과로 문의 하시기 바랍니다.</span></p>
                             </div>
                         </div>
                     </div>
@@ -103,7 +103,7 @@ $uname = $_SESSION['uname'];
                     <div class="lt"><a href="#" class="list"></a></div>
                     <div class="rt"><a href="" class="back"></a><a href="" class="next"></a></div>
                 </div>
-            </div>
+            </div>       
         </div><!-- /.content-wrapper -->
 
        <?php include("../pages/tpl/footer.tpl");?>
@@ -131,9 +131,9 @@ $uname = $_SESSION['uname'];
     <!-- Slimscroll -->
     <script src="/mustknow/plugins/slimScroll/jquery.slimscroll.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/mustknow/bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="/dist/js/app.min.js"></script>
+    <script src="/mustknow/dist/js/app.min.js"></script>
     <script type="text/javascript">
     $(function () {
         /* favorite */
