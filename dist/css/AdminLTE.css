@@ -404,7 +404,7 @@ a:focus {
     background: url(../../dist/img/search_on.png) 0 0 no-repeat;
 }
 
-.content-wrapper > .main{padding-bottom:52px;width:1374px;margin:0 auto}
+.content-wrapper > .main{padding-bottom:52px;width:1374px;margin:0 auto;min-height:612px}
 .content-wrapper > .detail-view{/*max-width:1150px*/;margin:0 224px 0 0;padding:0 51px 52px 51px;overflow:hidden}
 
 
@@ -6195,6 +6195,12 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .tiles-wrap > li.t13 .date,.tiles-wrap > li.t13 .imp{color:#a9b1b4}
 .tiles-wrap > li.t13 p,.tiles-wrap > li.t13 p a{color:#96a0a4}
 
+.tiles-wrap > li.t15 {border:solid 1px #e5e7eb;border-top-color:#a1474a;background-color:#ffffff;height:192px}
+.tiles-wrap > li.t15 strong{color:#a1474a}
+.tiles-wrap > li.t15 h3,.tiles-wrap > li.t15 h3 a{color:#000000}
+.tiles-wrap > li.t15 .date,.tiles-wrap > li.t15 .imp{color:#a9b1b4}
+.tiles-wrap > li.t15 p,.tiles-wrap > li.t13 p a{color:#96a0a4}
+
 
 
 
@@ -6261,10 +6267,10 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .inside-land .tiles-wrap > li:hover{background-image:none;box-shadow:0 5px 11px rgba(0, 0, 0, 0.1)}
 .inside-land .tiles-wrap > li h3{height:69px;overflow:hidden}
 .inside-land .tiles-wrap > li h3 a{}
-.inside-land .tiles-wrap .favorites{background: url(../../dist/img/favorite.png) center center no-repeat;position:absolute;left:0;bottom:0;width: 260px;
+.tiles-wrap .favorites{background: url(../../dist/img/favorite.png) center center no-repeat;position:absolute;left:0;bottom:0;width: 260px;
     height:38px;border-width:1px 0 0 0;border-top-color:#d9dadb;text-indent:-999px;overflow:hidden}
-.inside-land .tiles-wrap .favorites:hover{background-color:#fafafa}
-.inside-land .tiles-wrap .favorites.on{background-image:url(../../dist/img/favorite_on.png)}
+.tiles-wrap .favorites:hover{background-color:#fafafa}
+.tiles-wrap .favorites.on{background-image:url(../../dist/img/favorite_on.png)}
 
 
 .inside-land .tiles-wrap .status{background-color: #fafafa;
@@ -6273,6 +6279,7 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 .inside-land .tiles-wrap .status.rm-stop{background-image:url(../../dist/img/card_stop.png)}
 .inside-land .tiles-wrap .status.rm-complete{background-image:url(../../dist/img/card_complete.png)}
 .inside-land .tiles-wrap .status.rm-progress{background-image:url(../../dist/img/card_progress.png)}
+.inside-land .tiles-wrap .status.rm-progress2{background-image:url(../../dist/img/card_progress2.png)}
 
 
 .inside-land .tiles-wrap > li.t3,
@@ -6322,6 +6329,42 @@ content:"";width: 14px;height: 14px;display:block;background:url(../../dist/img/
 
 #sortbys li.active {
    font-size:13px;font-weight:500;color:#ffffff;background-color:#4f5865}
+
+/**
+ * Sort buttons
+ */
+.wrap_search_fnc{height:63px}
+.wrap_search_sort{position:relative;top:-46px;width:500px}
+.wrap_container .memo_more{margin:0 auto}
+#sortbys.search_sort {
+    list-style-type: none;
+    text-align: center;
+    margin:0;
+    overflow:hidden;padding:0;
+}
+
+#sortbys.search_sort li {
+    font-size:12px;
+    font-weight: 500
+    color: #a3a6aa;
+    float: left;
+    cursor: pointer;height: 30px;line-height:30px; width:95px;
+    background-color:#fafafa;
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;margin-left:0;
+    border:solid 1px #e5e5e5;border-radius:0;margin-left:-1px
+}
+#sortbys.search_sort li:first-child{border-top-left-radius:2px;border-bottom-left-radius:2px;margin-left:0}
+#sortbys.search_sort li:last-child{border-top-right-radius:2px;border-bottom-right-radius:2px;}
+
+#sortbys.search_sort li:first-child{margin:0}
+#sortbys.search_sort li:hover {
+    background-color: #ffffff;color:#6b727d
+}
+
+#sortbys.search_sort li.active {color:#3673dd;background-color:#ffffff}
 
 /**
  * Filters
@@ -6688,6 +6731,7 @@ table tbody .new{width:12px;height:12px;background: url(../../dist/img/ico_new.p
 .table-list table tr td span.rm-stop{color:#a9b0b4}
 
 .table-list.rm-table table tr th{border-top-color:#865025}
+.table-list.rm-table2 table tr th{border-top-color:#a1474a}
 
 /* sort-status */
 .sort-status{margin-left:16px}

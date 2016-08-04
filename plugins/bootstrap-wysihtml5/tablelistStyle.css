@@ -21,6 +21,12 @@
 	font-size: 24px;
 	font-weight: 400;
 }
+.title-area.search h2 span {
+    font-size:20px;
+    font-weight:500;
+    color: #333333;
+}
+.title-area.search h2 em{color: #6a6d72;font-style:normal;font-size: 20px;font-weight: 400;}
 .detail-wrapper.qna .title-area h2 {
 	margin: 0;
 	padding-bottom: 15px;

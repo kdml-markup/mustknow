@@ -207,7 +207,7 @@ $uname = $_SESSION['uname'];
                     </div>
                   <!--// 페이지네이션 -->
                 </div>
-            </div>       
+            </div>
         </div><!-- /.content-wrapper -->
 
        <?php include("../pages/tpl/footer.tpl");?>
