@@ -6,24 +6,12 @@
       <span class="sr-only">Toggle navigation</span>
     </a>
 </div>
-<aside class="main-sidebar" style="display:none;">
-<!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- search form
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-          </span>
-        </div>
-      </form> 
-       /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
+<aside class="main-sidebar">
+    <section class="sidebar ipt-sidebar">
       <ul class="sidebar-menu">
         <li><a href="/mustknow/"><span class="icon-home"></span><span>Home</span></a></li>
         <li class="active treeview">
-          <a href="#">
+          <a href="#">    
             <span class="icon-case"></span> <span>Case Study</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
@@ -170,27 +158,11 @@
         </li>
       </ul>
     </section>
-<!-- /.sidebar -->
-</aside>
-
-<aside class="main-sidebar" style="display:block;">
-<!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- search form
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-          </span>
-        </div>
-      </form> 
-       /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
+    <section class="sidebar sch-sidebar" style="display:none">
       <ul class="sidebar-menu">
         <li class="side_serarch_area">
 	        <input type="text" placeholder="콘텐츠 검색"/>
-            <img src="../../dist/img/btn_delete_keyword.png" style="display:block;"/>
+            <img src="/mustknow/dist/img/btn_delete_keyword.png" style="display:block;"/>
             <button>검색</button>
         </li>
         <li class="recnet_search_none" style="display:block;">
@@ -245,4 +217,12 @@ $('.treeview-menu > li.dropdown-hover').hover(function() {
 }, function() {
   $(this).find('.nav-end').stop(true, true).delay(200).fadeOut(500);
 });
+$('.gloval-sidebar a.sidebar-search').click(function(){
+    $(".main-sidebar .sch-sidebar").show();
+    $(".main-sidebar .ipt-sidebar").hide();
+});
+$('.gloval-sidebar a.sidebar-toggle').click(function(){
+    $(".main-sidebar .sch-sidebar").hide();
+    $(".main-sidebar .ipt-sidebar").show();
+}); 
 </script>
