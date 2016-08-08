@@ -6,7 +6,7 @@
       <span class="sr-only">Toggle navigation</span>
     </a>
 </div>
-<aside class="main-sidebar">
+<aside class="main-sidebar" style="display:none;">
 <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
       <!-- search form
@@ -167,6 +167,72 @@
               <li class=""><a href="/mustknow/form/complaint.php">매뉴얼</a></li>
               <li class=""><a href="/mustknow/form/format.php">회사서식</a></li>
           </ul>
+        </li>
+      </ul>
+    </section>
+<!-- /.sidebar -->
+</aside>
+
+<aside class="main-sidebar" style="display:block;">
+<!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- search form
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
+          </span>
+        </div>
+      </form> 
+       /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="side_serarch_area">
+	        <input type="text" placeholder="콘텐츠 검색"/>
+            <img src="../../dist/img/btn_delete_keyword.png" style="display:block;"/>
+            <button>검색</button>
+        </li>
+        <li class="recnet_search_none" style="display:block;">
+        	<span>최근 검색어가 없습니다.</span>
+        </li>
+        <li class="recent_keyword" style="display:none;">
+        	<span>최근 검색어</span>
+            <dl>
+            	<dt>계약</dt>
+                <dd class="btn_delete"></dd>
+            </dl>
+            <dl>
+            	<dt>금전 채권</dt>
+                <dd class="btn_delete"></dd>
+            </dl>
+            <dl>
+            	<dt>스톡옵션</dt>
+                <dd class="btn_delete"></dd>
+            </dl>
+            <dl>
+            	<dt>내용증명</dt>
+                <dd class="btn_delete"></dd>
+            </dl>
+            <a href="#">
+            	<span>전체삭제</span>
+            </a>
+        </li>
+        <li class="auto_complete" style="display:none;"> 
+        	<ul>
+            	<li>
+                	<span>계약</span>
+                </li>
+            	<li>
+                	<span>계약금 계약</span>
+                </li>
+            	<li>
+                	<span>상호계산계약에 제 3의 업종별</span>
+                </li>
+            	<li>
+                	<span>근로계약</span>
+                </li>
+            </ul>
         </li>
       </ul>
     </section>
