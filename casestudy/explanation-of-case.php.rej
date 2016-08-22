@@ -1,0 +1,9 @@
+diff a/casestudy/explanation-of-case.php b/casestudy/explanation-of-case.php	(rejected hunks)
+@@ -207,6 +207,7 @@
+                     </div>
+                   <!--// 페이지네이션 -->
+                 </div>
++            </div>
+         </div><!-- /.content-wrapper -->
+ 
+        <?php include("../pages/tpl/footer.tpl");?>

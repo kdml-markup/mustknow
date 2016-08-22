@@ -174,6 +174,7 @@ $uname = $_SESSION['uname'];
                             $i = rand(0,5);
                     ?>
                     <li class="<? echo $type ?>" data-date="<? echo $array[$i]['date'] ?>" data-popularity="<? echo $array[$i]['impt'] ?>" data-issue="부동산">
+                      <a href="video-lectures-detail.php" class="img"><img src="/dist/img/main/@temp.png" width="262" height="135" alt=""></a>
                       <a href="video-lectures-detail.php" class="img"><img src="/mustknow/dist/img/main/@temp.png" width="262" height="135" alt=""></a>
                       <strong><em>동영상강의 - 부동산</em></strong>
                         <h3><a href="video-lectures-detail.php"><? echo mb_strimwidth($array[$i]['title'],'0','57',"...","utf-8"); ?></a></h3>

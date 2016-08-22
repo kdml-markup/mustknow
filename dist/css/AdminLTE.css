@@ -404,6 +404,7 @@ a:focus {
     background: url(../../dist/img/search_on.png) 0 0 no-repeat;
 }
 
+.content-wrapper > .main{padding-bottom:52px;width:1374px;margin:0 auto}
 .content-wrapper > .main{padding-bottom:52px;width:1374px;margin:0 auto;min-height:612px}
 .content-wrapper > .detail-view{/*max-width:1150px*/;margin:0 224px 0 0;padding:0 51px 52px 51px;overflow:hidden}
 
@@ -595,7 +596,8 @@ a:focus {
  */
 
 .main-sidebar,
-.left-side {
+.left-side,
+.search-sidebar {
     position: absolute;
     top: 0;
     left: 50px;
@@ -6980,3 +6982,112 @@ table tbody .new{width:12px;height:12px;background: url(../../dist/img/ico_new.p
 .withdraw_content .agree input{position:relative;top:2px}
 .withdraw_content .agree label{color: #4f5865;font-size: 13px;padding-left:7px}
 
+
+
+
+
+
+
+
+
+
+/*사이드메뉴_검색*/
+.sidebar-menu .side_serarch_area {
+	position: relative;
+	height: 45px;
+	padding-left: 12px;
+	border-bottom: solid 1px #e5e5e5;
+}
+.sidebar-menu .side_serarch_area input {
+	width: 108px;
+	border: 0;
+	padding-right: 18px;
+}
+.sidebar-menu .side_serarch_area img {
+    position: absolute;
+    top: 18px;
+    left: 108px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+}
+.sidebar-menu .side_serarch_area button {
+    width: 30px;
+    height: 44px;
+    border: 0;
+    text-indent: -99999px;
+    background: url(../../dist/img/search_12.png) no-repeat 5px 17px;
+}
+.sidebar-menu .recnet_search_none {
+	padding-left: 12px;
+}
+.sidebar-menu .recnet_search_none span {
+	font-size: 12px;
+	display: block;
+	padding-top: 38px;
+}
+.sidebar-menu .recent_keyword span {
+	display: block;
+	color: #3673dd;
+	font-size: 10px;
+	padding-top: 11px;	
+	padding-left: 12px;
+	padding-bottom: 6px;
+}
+.sidebar-menu .recent_keyword dl {
+	height: 31px;
+	padding: 7px 12px;
+	margin: 0;
+	overflow: hidden;
+}
+.sidebar-menu .recent_keyword dl:hover {
+	background-color: #fafafa;
+}
+.sidebar-menu .recent_keyword dl dt {
+	float: left;
+	font-size: 12px;
+	cursor: pointer;
+}
+.sidebar-menu .recent_keyword dl dd {
+	float: right;
+	width: 11px;
+	height: 11px;
+	margin-top: 3px;
+	margin-right: 12px;
+	background: url(../../dist/img/btn_delete_keyword_02.png) no-repeat 0 0;
+	cursor: pointer;
+}
+.sidebar-menu .recent_keyword a {
+	padding: 0;
+	margin: 6px 12px;
+}
+.sidebar-menu .recent_keyword a:hover {
+	background-color: transparent;
+}
+.sidebar-menu .recent_keyword a span {
+	color: #9ba3b1;
+	padding: 0;
+	margin-top: -7px;
+}
+.sidebar-menu .auto_complete {
+	padding: 0;
+}
+.sidebar-menu .auto_complete ul {
+	list-style-type: none;
+	padding: 0;
+}
+.sidebar-menu .auto_complete ul li {
+	width: 100%;
+	height: 31px;
+	padding: 4px 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	cursor: pointer;
+}
+.sidebar-menu .auto_complete ul li:hover {
+	background-color: #fafafa;
+}
+.sidebar-menu .auto_complete ul li span {
+	font-size: 12px;
+}

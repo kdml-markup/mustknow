@@ -1,0 +1,9 @@
+diff a/dist/css/AdminLTE.css b/dist/css/AdminLTE.css	(rejected hunks)
+@@ -404,7 +404,6 @@
+     background: url(../../dist/img/search_on.png) 0 0 no-repeat;
+ }
+ 
+-.content-wrapper > .main{padding-bottom:52px;width:1374px;margin:0 auto}
+ .content-wrapper > .main{padding-bottom:52px;width:1374px;margin:0 auto;min-height:612px}
+ .content-wrapper > .detail-view{/*max-width:1150px*/;margin:0 224px 0 0;padding:0 51px 52px 51px;overflow:hidden}
+ 
