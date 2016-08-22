@@ -7,23 +7,11 @@
     </a>
 </div>
 <aside class="main-sidebar">
-<!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- search form
-      <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i></button>
-          </span>
-        </div>
-      </form> 
-       /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
+    <section class="sidebar ipt-sidebar">
       <ul class="sidebar-menu">
         <li><a href="/mustknow/"><span class="icon-home"></span><span>Home</span></a></li>
         <li class="active treeview">
-          <a href="#">
+          <a href="#">    
             <span class="icon-case"></span> <span>Case Study</span><i class="angle-left"></i>
           </a>
           <ul class="treeview-menu">
@@ -170,6 +158,56 @@
         </li>
       </ul>
     </section>
+    <section class="sidebar sch-sidebar" style="display:none">
+      <ul class="sidebar-menu">
+        <li class="side_serarch_area">
+	        <input type="text" placeholder="콘텐츠 검색"/>
+            <img src="/mustknow/dist/img/btn_delete_keyword.png" style="display:block;"/>
+            <button>검색</button>
+        </li>
+        <li class="recnet_search_none" style="display:block;">
+        	<span>최근 검색어가 없습니다.</span>
+        </li>
+        <li class="recent_keyword" style="display:none;">
+        	<span>최근 검색어</span>
+            <dl>
+            	<dt>계약</dt>
+                <dd class="btn_delete"></dd>
+            </dl>
+            <dl>
+            	<dt>금전 채권</dt>
+                <dd class="btn_delete"></dd>
+            </dl>
+            <dl>
+            	<dt>스톡옵션</dt>
+                <dd class="btn_delete"></dd>
+            </dl>
+            <dl>
+            	<dt>내용증명</dt>
+                <dd class="btn_delete"></dd>
+            </dl>
+            <a href="#">
+            	<span>전체삭제</span>
+            </a>
+        </li>
+        <li class="auto_complete" style="display:none;"> 
+        	<ul>
+            	<li>
+                	<span>계약</span>
+                </li>
+            	<li>
+                	<span>계약금 계약</span>
+                </li>
+            	<li>
+                	<span>상호계산계약에 제 3의 업종별</span>
+                </li>
+            	<li>
+                	<span>근로계약</span>
+                </li>
+            </ul>
+        </li>
+      </ul>
+    </section>
 <!-- /.sidebar -->
 </aside>
 
@@ -179,4 +217,12 @@ $('.treeview-menu > li.dropdown-hover').hover(function() {
 }, function() {
   $(this).find('.nav-end').stop(true, true).delay(200).fadeOut(500);
 });
+$('.gloval-sidebar a.sidebar-search').click(function(){
+    $(".main-sidebar .sch-sidebar").show();
+    $(".main-sidebar .ipt-sidebar").hide();
+});
+$('.gloval-sidebar a.sidebar-toggle').click(function(){
+    $(".main-sidebar .sch-sidebar").hide();
+    $(".main-sidebar .ipt-sidebar").show();
+}); 
 </script>
