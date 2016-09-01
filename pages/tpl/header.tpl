@@ -50,7 +50,7 @@
                     <div class="user-hello">
                         <h3>안녕하세요. <em><? echo $uname; ?></em> 님 환영합니다.</h3>
                         <a href="/mustknow/mypage/myservice/index.php" class="btn btn-gray">마이페이지</a>
-                        <a href="/mustknow/logout.php" class="btn btn-black">로그아웃</a>
+                        <a href="/mustknow/member/logout.php" class="btn btn-black">로그아웃</a>
                     </div>
                     <div class="user-status">
                         <h3 class="sb">서비스 이용 현황</h3>
@@ -77,7 +77,7 @@
                   <li class="user-true">
                     <h3>이미 서비스에 가입한 회원이신가요?</h3> 
                     <p>회원가입을 이미 완료한 회원이시라면 로그인을 해주세요.</p>
-                    <a href="/mustknow/login.php" class="btn btn-default btn-flat">로그인</a>
+                    <a href="/mustknow/member/login.php" class="btn btn-default btn-flat">로그인</a>
                     <a href="/mustknow/member/id_pw_find.php" class="find">아이디 / 비밀번호를 잃어버리셨나요?</a>
                   </li>
                 </ul>

@@ -29,9 +29,10 @@
                        </dl>
                        <? if (isset($_SESSION['uuser'])) : ?>
                        <dl>
-                           <dt><a href="">나의 결제정보</a></dt>
-                           <dd><a href="">서비스 결제하기</a></dd>
-                           <dd><a href="">서비스 결제내역</a></dd>
+                           <dt><a href="/mustknow/mypage/pay/pay-history.php">나의 결제정보</a></dt>
+                           <dd><a href="/mustknow/mypage/pay/proceed.php">서비스 결제하기</a></dd>
+                           <dd><a href="/mustknow/mypage/pay/pay-history.php">서비스 결제내역</a></dd>
+                           <dd><a href="/mustknow/mypage/pay/pay-end.php">서비스 결제완료(temp)</a></dd>
                        </dl>
                        <? endif; ?>
                        <dl>
